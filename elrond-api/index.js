@@ -16,11 +16,9 @@ const getCavemen = async (collection) => {
   );
 
   for (let i = 0; i < count; i += maxQuerySize) {
-    console.log(`numbers: ${i} and ${i + maxQuerySize}`);
     let allData = await axios.get(
       `${baseUrl}/nfts?from=${i}&size=${maxQuerySize}&withOwner=true&collection=${collection}`
     );
-    console.log(`allData.data.length: ${allData.data.length}`);
     allData.data.forEach((caveman) => {
       allCavemen.push(caveman);
     });
