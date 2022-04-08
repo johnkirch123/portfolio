@@ -1,11 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const SearchComponent = () => {
+const SearchComponent = ({ onSearch }) => {
+  const [query, setQuery] = useState('');
+
   return (
-    <>
-      <input clasName='search' type='search' name='q' placeholder='Search...' />
-      <button className='search'>Search</button>
-    </>
+    <div className='search__box'>
+      <input
+        id='search-box'
+        onChange={(e) => setQuery(e.target.value)}
+        onKeyPress={onSearch}
+        type='search'
+        autoComplete='off'
+        value={query.toUpperCase()}
+        placeholder='Search...'
+      />
+    </div>
   );
 };
 
