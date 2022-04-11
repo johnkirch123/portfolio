@@ -1,6 +1,6 @@
 import React from 'react';
 
-const DateTimeComponent = ({ dateTime, timezoneOffset }) => {
+const DateTimeComponent = ({ location, dateTime, timezoneOffset }) => {
   const locationOffsetUTC = 14400;
   const dateTimeString = new Date(
     (dateTime + locationOffsetUTC + timezoneOffset) * 1000
@@ -15,12 +15,15 @@ const DateTimeComponent = ({ dateTime, timezoneOffset }) => {
 
   return (
     <div className='date__time'>
-      <h2 className='time'>
+      <h1 className='location'>
+        {location === undefined ? '' : `${location}`}
+      </h1>
+      <h3 className='time'>
         {dateTimeArray[4] === undefined
           ? `Please enter a location above`
           : `${dateTimeArray[4]}`}
-      </h2>
-      <h4 className='date'>{date.startsWith('Invalid') ? '' : `${date}`}</h4>
+      </h3>
+      <h5 className='date'>{date.startsWith('Invalid') ? '' : `${date}`}</h5>
     </div>
   );
 };

@@ -24,7 +24,6 @@ body {
 
 .app {
   width: 480px;
-  height: 800px;
   background: $light-medium-grey;
   box-shadow: -6px -6px 9px rgba(255, 255, 255, 1),
     6px 6px 9px rgba(0, 0, 0, 0.07), inset -6px -6px 9px rgba(0, 0, 0, 0.07),
@@ -33,7 +32,7 @@ body {
   border-radius: 10%;
   color: $white;
   text-align: center;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .search__box {
@@ -124,8 +123,11 @@ body {
   padding-top: 1rem;
 }
 
-.time {
+.location {
   margin-bottom: 0.5rem;
+}
+
+.time {
 }
 
 .date {
