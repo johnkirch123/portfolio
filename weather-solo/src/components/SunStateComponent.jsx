@@ -1,16 +1,13 @@
 import React from 'react';
 import sunrise from '../icons/sunrise.png';
 import sunset from '../icons/sunset.png';
+import config from '../config/default.json';
 
-const SunStateComponent = ({ sunTime, icon }) => {
-  const sunTimeString = new Date(sunTime * 1000).toString();
+const SunStateComponent = ({ sunTime, icon, dateTime, timezoneOffset }) => {
+  const sunTimeString = new Date(
+    (sunTime + timezoneOffset + config.locationOffset) * 1000
+  ).toString();
   const sunTimeArray = sunTimeString.split(' ');
-  //  let date = '';
-  //  if (sunTimeArray !== []) {
-  //    for (let i = 0; i < 4; i++) {
-  //      date += sunTimeArray[i] + ' ';
-  //    }
-  //  }
 
   return (
     <div>
