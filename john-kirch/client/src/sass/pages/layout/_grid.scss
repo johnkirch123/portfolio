@@ -1,0 +1,10 @@
+.container {
+  box-shadow: inset 3px 3px 10rem rgba(0, 0, 0, 0.3);
+  display: grid;
+  grid-template-columns: repeat(
+    8,
+    [col-start] minmax(min-content, 100%) [col-end]
+  );
+  grid-template-rows: [nav-start] 5rem [nav-end header-start] calc(100vh - 5rem) [header-end about-start] 100vh [about-end portfolio-start] 125vh [portfolio-end];
+  justify-content: center;
+}

@@ -1,0 +1,59 @@
+:root {
+  --duration: 1;
+}
+// COLOR PRIMARIES
+$color-primary: #886a4a;
+
+$color-primary-light: #e3874f;
+
+$color-primary-dark: #443626;
+$color-primary-dark-2: #382f26;
+$color-primary-dark-3: #181411;
+// COLOR BROWNS
+$color-brown-light: #d7c7ac;
+// COLOR GREY DARKS
+$color-grey-dark: #111;
+$color-grey-dark-1: #333;
+$color-grey-dark-2: #555;
+// COLOR GREY MEDIUMS
+$color-grey-medium-1: #37363d;
+// COLOR GREY LIGHTS
+$color-grey-light-1: #707070;
+$color-grey-light-2: #cecece;
+$color-grey-light-3: #eee;
+
+// BLACK & WHITE
+$color-white: #fff;
+$color-black: #000;
+// SITE FONT
+$font-display: "Inknut Antiqua";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+::-moz-selection {
+  background-color: $color-primary;
+  color: $color-white;
+}
+
+::selection {
+  background-color: $color-primary;
+  color: $color-white;
+}
+
+.body-container {
+  width: 75%;
+  grid-row: 3 / 4;
+  grid-column: 1 / -1;
+  margin: 0 auto;
+}

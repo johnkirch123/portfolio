@@ -1,0 +1,41 @@
+.heading-one {
+  font-size: 5rem;
+  margin-bottom: 5rem;
+
+  animation: fadeIn 0.5s ease-out, moveInLeft 1.5s ease-in-out 0.5s;
+  animation-fill-mode: backwards;
+  backface-visibility: hidden;
+}
+
+.heading-two {
+  font-size: 2.5rem;
+  opacity: 0.8;
+
+  &--1 {
+    animation: fadeIn 1s ease-out 1s, moveInLeft 1s ease-out 1.5s;
+    animation-fill-mode: backwards;
+    backface-visibility: hidden;
+
+    margin-left: 1rem;
+  }
+
+  &--2 {
+    animation: fadeIn 2s ease-out 1.5s, moveInLeft 1.3s ease-out 2.5s;
+    animation-fill-mode: backwards;
+    backface-visibility: hidden;
+
+    margin-left: 44rem;
+  }
+
+  &--3 {
+    animation: fadeIn 3s ease-out 2.5s, moveInLeft 1.6s ease-out 3.5s;
+    animation-fill-mode: backwards;
+    backface-visibility: hidden;
+    margin-left: 82rem;
+  }
+}
+
+.heading-three {
+  font-size: 2.5rem;
+  letter-spacing: 1.2rem;
+}
