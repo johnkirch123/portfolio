@@ -40,14 +40,45 @@
 // ******************************************************************************************************************************************************* //
 
 // Pig latin
-function pigIt(str){
-  let pigWord = '';
-    str.split(' ').forEach(word => {
-    if(word.match(/[a-zA-Z]/)) {
-        pigWord += word.substr(1) + word[0] + 'ay ';
-    } else pigWord += word;
-  });
-  return pigWord;
+// function pigIt(str){
+//   let pigWord = '';
+//     str.split(' ').forEach(word => {
+//     if(word.match(/[a-zA-Z]/)) {
+//         pigWord += word.substr(1) + word[0] + 'ay ';
+//     } else pigWord += word;
+//   });
+//   return pigWord;
+// }
+
+// console.log(pigIt('This is my string !'));
+  
+// ******************************************************************************************************************************************************* //
+
+// SURRONDING MATRIX WITH DEPENDANCY VARIABLE
+let matrix = [[0,1,2],[3,4,5],[6,7,8]];
+// let matrix = [[0,1,2,3,4],[5,6,7,8,9],[10,11,12,13,14],[15,16,17,18,19],[20,21,22,23,24]];
+function get_neighbourhood(type, arr, coordinates){
+  let result = [];
+  let m = coordinates[0];
+  let n = coordinates[1];
+  if(m < 0 || m >= arr.length || n < 0 || n >= arr[0].length || arr === []) return [];
+
+  if(m-1 >= 0) result.push(arr[m-1][n]);
+  if(n-1 >= 0) result.push(arr[m][n-1]);
+  if(m+1 <= arr.length - 1) result.push(arr[m+1][n]);
+  if(n+1 <= arr[0].length - 1) result.push(arr[m][n+1]);
+
+  if(type === 'moore') {
+    if(m-1 >= 0 && n-1 >= 0) result.push(arr[m-1][n-1]);
+    if(m-1 >= 0 && n+1 <= arr.length - 1) result.push(arr[m-1][n+1]);
+    if(m+1 <= arr.length - 1 && n-1 >= 0) result.push(arr[m+1][n-1]);
+    if(m+1 <= arr.length - 1 && n+1 <= arr[0].length -1) result.push(arr[m+1][n+1]);
+  }
+  return result;
 }
 
-console.log(pigIt('This is my string !'));
+// console.log(get_neighbourhood('moore', matrix, [0,0]));
+// console.log(get_neighbourhood('moore', matrix, [2,2]));
+// console.log(get_neighbourhood('von_neumann', matrix, [2,2]));
+console.log(get_neighbourhood('von_neumann', matrix, [1,1]));
+console.log(get_neighbourhood('moore', matrix, [-1,1]));
