@@ -1,0 +1,18 @@
+{
+  "name": "crypto-cavemen-v2",
+  "version": "1.0.0",
+  "description": "Crypto Cavemen V2 Web Application",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "author": "John Kirch",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.3",
+    "mongoose": "^6.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
