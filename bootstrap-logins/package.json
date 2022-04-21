@@ -1,0 +1,20 @@
+{
+  "name": "bootstrap-logins",
+  "version": "1.0.0",
+  "description": "Various logins with bootstrap css",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "client": "\"npm run start\" --prefix client",
+    "dev": "concurrently \"npm run start\" \"npm run client\""
+  },
+  "author": "John Kirch",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.1.0",
+    "express": "^4.17.3",
+    "mongoose": "^6.3.0",
+    "nodemon": "^2.0.15",
+    "passport": "^0.5.2"
+  }
+}
