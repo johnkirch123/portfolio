@@ -23,6 +23,10 @@ const UserSchema = new mongoose.Schema({
   gender: {
     type: String,
     default: 'none'
+  },
+  count: {
+    type: Number,
+    default: 0
   }
 });
 

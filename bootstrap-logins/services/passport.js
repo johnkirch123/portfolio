@@ -20,8 +20,15 @@ passport.use(
       callbackURL: '/auth/google/callback'
     },
     async (accessToken, refreshToken, profile, done) => {
-      const existingUser = await User.findOne({ googleID: profile.id });
+      const existingUser = await User.findOne({
+        googleID: profile.id
+      });
       if (existingUser) {
+        await User.findOneAndUpdate(
+          { id: existingUser.id },
+          { $inc: { count: 1 } }
+        );
+        console.log(existingUser);
         done(null, existingUser);
       } else {
         const user = await new User({

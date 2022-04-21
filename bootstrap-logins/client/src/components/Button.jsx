@@ -1,10 +1,15 @@
-import { Link } from 'react-router-dom';
-
-const Button = () => {
+const Button = ({ text, color, link, icon }) => {
   return (
-    <Link to='/auth/google' className='btn btn-primary px-4'>
-      Sign in With Google
-    </Link>
+    <>
+      <a
+        href={link}
+        className='btn py-2 mb-4 d-block w-75 mx-auto'
+        style={{ backgroundColor: `${color}`, color: 'white' }}
+      >
+        <span style={{ marginRight: '1rem' }}>{icon}</span>
+        Sign in With {text}
+      </a>
+    </>
   );
 };
 

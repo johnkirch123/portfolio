@@ -1,10 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { applyMiddleware } from 'redux';
-import reducer from '../reducers';
+import reduxThunk from 'redux-thunk';
+import authReducer from '../reducers/authReducer';
 
 const store = configureStore({
-  reducer,
-  middleware: [applyMiddleware],
+  reducer: {
+    auth: authReducer
+  },
+  middleware: [reduxThunk],
   preloadedState: {}
 });
 
