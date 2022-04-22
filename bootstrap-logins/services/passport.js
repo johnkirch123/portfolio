@@ -24,12 +24,13 @@ passport.use(
         googleID: profile.id
       });
       if (existingUser) {
-        await User.findOneAndUpdate(
+        console.log('before: ', existingUser);
+        const updatedUser = await User.findOneAndUpdate(
           { id: existingUser.id },
           { $inc: { count: 1 } }
         );
-        console.log(existingUser);
-        done(null, existingUser);
+        console.log('after: ', updatedUser);
+        done(null, updatedUser);
       } else {
         const user = await new User({
           googleID: profile.id,

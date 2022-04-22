@@ -16,11 +16,10 @@
 // If a name has exactly 4 letters in it, you can be sure that it has to be a friend of yours! Otherwise, you can be sure he's not...
 
 // function friend(friends){
-    //   return friends.filter(name => name.split('').length === 4);
-    // }
-    // console.log(friend(["Jimm", "Cari", "aret", "truehdnviegkwgvke", "sixtyiscooooool"]));
-    
-    
+//   return friends.filter(name => name.split('').length === 4);
+// }
+// console.log(friend(["Jimm", "Cari", "aret", "truehdnviegkwgvke", "sixtyiscooooool"]));
+
 // ******************************************************************************************************************************************************* //
 // There was a test in your class and you passed it. Congratulations!
 // But you're an ambitious person. You want to know if you're better than the average student in your class.
@@ -51,34 +50,76 @@
 // }
 
 // console.log(pigIt('This is my string !'));
-  
+
 // ******************************************************************************************************************************************************* //
 
 // SURRONDING MATRIX WITH DEPENDANCY VARIABLE
-let matrix = [[0,1,2],[3,4,5],[6,7,8]];
-// let matrix = [[0,1,2,3,4],[5,6,7,8,9],[10,11,12,13,14],[15,16,17,18,19],[20,21,22,23,24]];
-function get_neighbourhood(type, arr, coordinates){
-  let result = [];
-  let m = coordinates[0];
-  let n = coordinates[1];
-  if(m < 0 || m >= arr.length || n < 0 || n >= arr[0].length || arr === []) return [];
+// let matrix = [[0,1,2],[3,4,5],[6,7,8]];
+// // let matrix = [[0,1,2,3,4],[5,6,7,8,9],[10,11,12,13,14],[15,16,17,18,19],[20,21,22,23,24]];
+// function get_neighbourhood(type, arr, coordinates){
+//   let result = [];
+//   let m = coordinates[0];
+//   let n = coordinates[1];
+//   if(m < 0 || m >= arr.length || n < 0 || n >= arr[0].length || arr === []) return [];
 
-  if(m-1 >= 0) result.push(arr[m-1][n]);
-  if(n-1 >= 0) result.push(arr[m][n-1]);
-  if(m+1 <= arr.length - 1) result.push(arr[m+1][n]);
-  if(n+1 <= arr[0].length - 1) result.push(arr[m][n+1]);
+//   if(m-1 >= 0) result.push(arr[m-1][n]);
+//   if(n-1 >= 0) result.push(arr[m][n-1]);
+//   if(m+1 <= arr.length - 1) result.push(arr[m+1][n]);
+//   if(n+1 <= arr[0].length - 1) result.push(arr[m][n+1]);
 
-  if(type === 'moore') {
-    if(m-1 >= 0 && n-1 >= 0) result.push(arr[m-1][n-1]);
-    if(m-1 >= 0 && n+1 <= arr.length - 1) result.push(arr[m-1][n+1]);
-    if(m+1 <= arr.length - 1 && n-1 >= 0) result.push(arr[m+1][n-1]);
-    if(m+1 <= arr.length - 1 && n+1 <= arr[0].length -1) result.push(arr[m+1][n+1]);
-  }
-  return result;
+//   if(type === 'moore') {
+//     if(m-1 >= 0 && n-1 >= 0) result.push(arr[m-1][n-1]);
+//     if(m-1 >= 0 && n+1 <= arr.length - 1) result.push(arr[m-1][n+1]);
+//     if(m+1 <= arr.length - 1 && n-1 >= 0) result.push(arr[m+1][n-1]);
+//     if(m+1 <= arr.length - 1 && n+1 <= arr[0].length -1) result.push(arr[m+1][n+1]);
+//   }
+//   return result;
+// }
+
+// // console.log(get_neighbourhood('moore', matrix, [0,0]));
+// // console.log(get_neighbourhood('moore', matrix, [2,2]));
+// // console.log(get_neighbourhood('von_neumann', matrix, [2,2]));
+// console.log(get_neighbourhood('von_neumann', matrix, [1,1]));
+// console.log(get_neighbourhood('moore', matrix, [-1,1]));
+
+// ******************************************************************************************************************************************************* //
+
+// FIRST STRING ENDS WITH SECOND STRING
+// function solution(str, ending) {
+//   return str.endsWith(ending);
+// }
+
+// console.log(solution('abc', 'bc'));
+// console.log(solution('abc', 'bce'));
+
+// ******************************************************************************************************************************************************* //
+
+// CAESAR CIPHERS - 6 kyu
+
+function encryptor(key, message) {
+  return message
+    .split('')
+    .map((letter) => {
+      if (letter.match(/[a-z]/)) {
+        let char = letter.charCodeAt(0) + (key % 26);
+        if (char < 97) char = 26 + char;
+        if (char > 122) char = char - 26;
+        return String.fromCharCode(char);
+      }
+      if (letter.match(/[A-Z]/)) {
+        let char = letter.charCodeAt(0) + (key % 26);
+        if (char < 65) char = 26 + char;
+        if (char > 90) char = char - 26;
+        return String.fromCharCode(char);
+      }
+      return letter;
+    })
+    .join('');
 }
 
-// console.log(get_neighbourhood('moore', matrix, [0,0]));
-// console.log(get_neighbourhood('moore', matrix, [2,2]));
-// console.log(get_neighbourhood('von_neumann', matrix, [2,2]));
-console.log(get_neighbourhood('von_neumann', matrix, [1,1]));
-console.log(get_neighbourhood('moore', matrix, [-1,1]));
+console.log(encryptor(-5, 'Hello World!'));
+// console.log(encryptor(13, ''));
+// console.log(encryptor(0, 'no cypher'));
+// console.log(encryptor(-27, 'no cypher'));
+// console.log(encryptor(13, 'Caesar Cipher'));
+// console.log(encryptor(27, 'Whoopi Goldberg'));
