@@ -1,6 +1,5 @@
 import { connect } from 'react-redux';
 const Header = ({ auth }) => {
-  console.log('auth from header:', auth);
   const renderContent = () => {
     switch (auth) {
       case null:

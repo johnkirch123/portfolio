@@ -1,5 +1,6 @@
 const passport = require('passport');
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
+const TwitterStrategy = require('passport-twitter').Strategy;
 const User = require('../models/User');
 const keys = require('../config/keys');
 
@@ -12,6 +13,7 @@ passport.deserializeUser(async (id, done) => {
   done(null, user);
 });
 
+// Google passport
 passport.use(
   new GoogleStrategy(
     {
@@ -43,6 +45,23 @@ passport.use(
         }).save();
         done(null, user);
       }
+    }
+  )
+);
+
+//Twitter passport
+passport.use(
+  new TwitterStrategy(
+    {
+      consumerKey: keys.twitterAPIKey,
+      consumerSecret: keys.twitterAPIKeySecret,
+      callbackURL: '/auth/twitter/callback'
+    },
+    function (token, tokenSecret, profile, cb) {
+      User.findOrCreate({ twitterId: profile.id }, function (err, user) {
+        console.log('twitter profile: ', profile);
+        return cb(err, user);
+      });
     }
   )
 );
