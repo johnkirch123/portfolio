@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const UserSchema = new mongoose.Schema({
   googleID: String,
   facebookID: String,
+  twitterID: String,
   githubID: String,
   linkedinID: String,
   name: {
@@ -15,14 +16,25 @@ const UserSchema = new mongoose.Schema({
       default: 'None Given'
     }
   },
-  email: [],
+  email: {
+    type: String,
+    default: 'no-email@email.com'
+  },
   pfp: {
     type: String,
     default: 'none'
   },
   gender: {
     type: String,
-    default: 'none'
+    default: 'No Gender Given'
+  },
+  description: {
+    type: String,
+    defualt: 'No description given'
+  },
+  location: {
+    type: String,
+    default: 'Not Given'
   },
   count: {
     type: Number,

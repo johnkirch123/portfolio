@@ -12,13 +12,31 @@ const Dashboard = ({ auth }) => {
           <div className='card' style={{ width: '18rem', margin: '5rem auto' }}>
             <img
               src={auth.pfp}
-              alt='User Profile Picture'
+              alt='User Profile'
               className='card-img-top img-fluid'
             />
             <div className='card-body'>
               <h5>{`Welcome to your Dashboard ${auth.name.firstName} ${auth.name.lastName}`}</h5>
-              <p>{`email: ${auth.email[0].value}`}</p>
-              <p>{`gender: ${auth.gender}`}</p>
+              {auth.description === 'No description given' ? (
+                ''
+              ) : (
+                <p>{`description: ${auth.description}`}</p>
+              )}
+              {auth.email === 'no-email@email.com' ? (
+                ''
+              ) : (
+                <p>{`email: ${auth.email}`}</p>
+              )}
+              {auth.location === 'Not Given' ? (
+                ''
+              ) : (
+                <p>{`location: ${auth.location}`}</p>
+              )}
+              {auth.gender === 'No Gender Given' ? (
+                ''
+              ) : (
+                <p>{`gender: ${auth.gender}`}</p>
+              )}
               <p>{`You have visited ${auth.count} times`}</p>
             </div>
           </div>
