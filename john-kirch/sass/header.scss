@@ -1,0 +1,65 @@
+:root {
+  --background: #f8f8f8;
+  --dark: #303032;
+}
+
+@keyframes spin {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-100%) rotate(500deg);
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 1.6rem;
+
+  &_logo {
+    position: relative;
+    background: var(--dark);
+    border: 0.25rem solid var(--dark);
+    height: 5rem;
+    width: 5rem;
+    outline: 0;
+    overflow: hidden;
+
+    &::before {
+      content: 'JK';
+      font-size: 2rem;
+      color: white;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -50%;
+      left: -50%;
+      background: var(--background);
+      height: 200%;
+      width: 200%;
+      border-radius: 45%;
+      animation: spin 6s ease-in-out infinite;
+    }
+  }
+
+  &_nav {
+    &--list {
+      display: flex;
+      list-style: none;
+      &-item {
+        & a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

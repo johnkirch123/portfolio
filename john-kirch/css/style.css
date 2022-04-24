@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+.container {
+  margin: 0 3rem; }
+
+body {
+  font-family: 'Roboto Mono', monospace; }
+
+:root {
+  --background: #f8f8f8;
+  --dark: #303032; }
+
+@keyframes spin {
+  0% {
+    transform: translateY(0) rotate(0deg); }
+  100% {
+    transform: translateY(-100%) rotate(500deg); } }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.6rem; }
+  .header_logo {
+    position: relative;
+    background: var(--dark);
+    border: 0.25rem solid var(--dark);
+    height: 5rem;
+    width: 5rem;
+    outline: 0;
+    overflow: hidden; }
+    .header_logo::before {
+      content: 'JK';
+      font-size: 2rem;
+      color: white;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    .header_logo::after {
+      content: '';
+      position: absolute;
+      bottom: -50%;
+      left: -50%;
+      background: var(--background);
+      height: 200%;
+      width: 200%;
+      border-radius: 45%;
+      animation: spin 6s ease-in-out infinite; }
+  .header_nav--list {
+    display: flex;
+    list-style: none; }
+    .header_nav--list-item a {
+      text-decoration: none; }
