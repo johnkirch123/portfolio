@@ -6,13 +6,22 @@ import { getPlacesData } from './api';
 import Header from './components/Header/Header';
 import List from './components/List/List';
 import Map from './components/Map/Map';
-import PlaceDetails from './components/PlaceDetails/PlaceDetails';
 import './App.css';
-
+// Stopped at roughly 1:54:22 of the 'Build and Deploy 5 Javascript & React
+// Api Projects in 10 Hours - Full Course | RapidApi, getting a 429 error
+// too many call requests, rate limit. Not sure why. Also the scrollIntoView
+// isn't working, app loaded when restarted, then tried to change to hotels
+// and got the error.
 function App() {
   const [places, setPlaces] = useState([]);
+  const [filteredPlaces, setFilteredPlaces] = useState([]);
   const [coordinates, setCoordinates] = useState({});
   const [bounds, setBounds] = useState({});
+  const [childClicked, setChildClicked] = useState(null);
+
+  const [isLoading, setIsLoading] = useState(false);
+  const [type, setType] = useState('restaurants');
+  const [rating, setRating] = useState('');
 
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(
@@ -20,30 +29,49 @@ function App() {
         setCoordinates({ lat: latitude, lng: longitude });
       },
       (err) => {
+        console.error(err.message);
         setCoordinates({ lat: 43.8177, lng: 11.37 });
       }
     );
   }, []);
 
   useEffect(() => {
-    getPlacesData(bounds.sw, bounds.ne).then((data) => {
+    const filteredPlaces = places.filter((place) => place.rating > rating);
+
+    setFilteredPlaces(filteredPlaces);
+  }, [rating]);
+
+  useEffect(() => {
+    setIsLoading(true);
+    getPlacesData(type, bounds.sw, bounds.ne).then((data) => {
       setPlaces(data);
+      setIsLoading(false);
     });
-  }, [coordinates, bounds]);
+  }, [type, coordinates, bounds]);
 
   return (
     <>
       <CssBaseline />
-      <Header />
+      <Header setCoordinates={setCoordinates} />
       <Grid container spacing={3} style={{ width: '100%' }}>
         <Grid item xs={12} md={4}>
-          <List places={places} />
+          <List
+            places={filteredPlaces.length ? filteredPlaces : places}
+            childClicked={childClicked}
+            isLoading={isLoading}
+            type={type}
+            setType={setType}
+            rating={rating}
+            setRating={setRating}
+          />
         </Grid>
         <Grid item xs={12} md={8}>
           <Map
             setCoordinates={setCoordinates}
             setBounds={setBounds}
             coordinates={coordinates}
+            places={filteredPlaces.length ? filteredPlaces : places}
+            setChildClicked={setChildClicked}
           />
         </Grid>
       </Grid>
