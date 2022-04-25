@@ -53,11 +53,11 @@
 
 // ******************************************************************************************************************************************************* //
 
-<<<<<<< HEAD
+// <<<<<<< HEAD
 // // SURRONDING MATRIX WITH DEPENDANCY VARIABLE
-=======
+// =======
 // SURRONDING MATRIX WITH DEPENDANCY VARIABLE
->>>>>>> 9bff11a22da72c2f43617af4850fb6c32bd9b9b4
+// >>>>>>> 9bff11a22da72c2f43617af4850fb6c32bd9b9b4
 // let matrix = [[0,1,2],[3,4,5],[6,7,8]];
 // // let matrix = [[0,1,2,3,4],[5,6,7,8,9],[10,11,12,13,14],[15,16,17,18,19],[20,21,22,23,24]];
 // function get_neighbourhood(type, arr, coordinates){
@@ -88,7 +88,7 @@
 
 // ******************************************************************************************************************************************************* //
 
-<<<<<<< HEAD
+// <<<<<<< HEAD
 // RGB TO HEX
 // function rgb(r, g, b) {
 //   const hexArray = [
@@ -127,17 +127,17 @@
 // }
 
 // MORE CONCISE RGB TO HEX AND LEARNED FROM READING AND THE SUPPLIED ANSWERS
-const rgb = (r, g, b) => {
-  return toHex(r) + toHex(g) + toHex(b);
-};
+// const rgb = (r, g, b) => {
+//   return toHex(r) + toHex(g) + toHex(b);
+// };
 
-function toHex(num) {
-  return num <= 0 ? "00" : 255 <= num ? "FF" : num.toString(16).toUpperCase();
-}
+// function toHex(num) {
+//   return num <= 0 ? "00" : 255 <= num ? "FF" : num.toString(16).toUpperCase();
+// }
 
-console.log(rgb(93, 3, 3));
+// console.log(rgb(93, 3, 3));
 // console.log(rgb(0, 0, 0));
-=======
+//=======
 // FIRST STRING ENDS WITH SECOND STRING
 // function solution(str, ending) {
 //   return str.endsWith(ending);
@@ -150,31 +150,39 @@ console.log(rgb(93, 3, 3));
 
 // CAESAR CIPHERS - 6 kyu
 
-function encryptor(key, message) {
-  return message
-    .split('')
-    .map((letter) => {
-      if (letter.match(/[a-z]/)) {
-        let char = letter.charCodeAt(0) + (key % 26);
-        if (char < 97) char = 26 + char;
-        if (char > 122) char = char - 26;
-        return String.fromCharCode(char);
-      }
-      if (letter.match(/[A-Z]/)) {
-        let char = letter.charCodeAt(0) + (key % 26);
-        if (char < 65) char = 26 + char;
-        if (char > 90) char = char - 26;
-        return String.fromCharCode(char);
-      }
-      return letter;
-    })
-    .join('');
-}
+// function encryptor(key, message) {
+//   return message
+//     .split('')
+//     .map((letter) => {
+//       if (letter.match(/[a-z]/)) {
+//         let char = letter.charCodeAt(0) + (key % 26);
+//         if (char < 97) char = 26 + char;
+//         if (char > 122) char = char - 26;
+//         return String.fromCharCode(char);
+//       }
+//       if (letter.match(/[A-Z]/)) {
+//         let char = letter.charCodeAt(0) + (key % 26);
+//         if (char < 65) char = 26 + char;
+//         if (char > 90) char = char - 26;
+//         return String.fromCharCode(char);
+//       }
+//       return letter;
+//     })
+//     .join('');
+// }
 
-console.log(encryptor(-5, 'Hello World!'));
-// console.log(encryptor(13, ''));
-// console.log(encryptor(0, 'no cypher'));
-// console.log(encryptor(-27, 'no cypher'));
-// console.log(encryptor(13, 'Caesar Cipher'));
-// console.log(encryptor(27, 'Whoopi Goldberg'));
->>>>>>> 9bff11a22da72c2f43617af4850fb6c32bd9b9b4
+// console.log(encryptor(-5, 'Hello World!'));
+// // console.log(encryptor(13, ''));
+// // console.log(encryptor(0, 'no cypher'));
+// // console.log(encryptor(-27, 'no cypher'));
+// // console.log(encryptor(13, 'Caesar Cipher'));
+// // console.log(encryptor(27, 'Whoopi Goldberg'));
+// >>>>>>> 9bff11a22da72c2f43617af4850fb6c32bd9b9b4
+
+// ******************************************************************************************************************************************************* //
+
+const removeChar = (str) => {
+  return str.split("").slice(1, -1).join("");
+};
+
+console.log(removeChar("hello"));
