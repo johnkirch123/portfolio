@@ -1,22 +1,10 @@
-:root {
-  --background: #f8f8f8;
-  --dark: #303032;
-}
-
-@keyframes spin {
-  0% {
-    transform: translateY(0) rotate(0deg);
-  }
-  100% {
-    transform: translateY(-100%) rotate(500deg);
-  }
-}
-
 .header {
   display: flex;
   justify-content: space-between;
+  width: 100vw;
 
   font-size: 1.6rem;
+  background-color: transparent;
 
   &_logo {
     position: relative;
@@ -26,6 +14,8 @@
     width: 5rem;
     outline: 0;
     overflow: hidden;
+
+    margin-left: 3rem;
 
     &::before {
       content: 'JK';
@@ -47,7 +37,8 @@
       height: 200%;
       width: 200%;
       border-radius: 45%;
-      animation: spin 6s ease-in-out infinite;
+      animation: spin 4s ease-in-out forwards;
+      animation-delay: 1.2s;
     }
   }
 
@@ -55,9 +46,14 @@
     &--list {
       display: flex;
       list-style: none;
+
+      margin-top: 1rem;
       &-item {
         & a {
           text-decoration: none;
+          color: black;
+          padding: 2rem;
+          cursor: pointer;
         }
       }
     }
