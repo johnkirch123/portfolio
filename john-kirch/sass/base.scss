@@ -7,8 +7,12 @@
 }
 
 :root {
-  --background: #f8f8f8;
+  --light: #f8f8f8;
   --dark: #303032;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .container {

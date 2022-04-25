@@ -2,20 +2,20 @@
   display: flex;
   justify-content: space-between;
   width: 100vw;
+  position: fixed;
+  z-index: 1000;
 
   font-size: 1.6rem;
-  background-color: transparent;
+  background: var(--background);
 
   &_logo {
     position: relative;
     background: var(--dark);
-    border: 0.25rem solid var(--dark);
     height: 5rem;
     width: 5rem;
     outline: 0;
     overflow: hidden;
-
-    margin-left: 3rem;
+    cursor: pointer;
 
     &::before {
       content: 'JK';
@@ -38,11 +38,12 @@
       width: 200%;
       border-radius: 45%;
       animation: spin 4s ease-in-out forwards;
-      animation-delay: 1.2s;
+      animation-delay: 0.8s;
     }
   }
 
   &_nav {
+    padding-right: 1rem;
     &--list {
       display: flex;
       list-style: none;
@@ -54,6 +55,7 @@
           color: black;
           padding: 2rem;
           cursor: pointer;
+          animation: linkFonts 2s forwards;
         }
       }
     }

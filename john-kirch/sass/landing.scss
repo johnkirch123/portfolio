@@ -1,15 +1,106 @@
 .landing {
   position: relative;
   background: var(--dark);
-  height: 100vw;
+  height: 100vh;
   width: 100vw;
   outline: 0;
   overflow: hidden;
 
+  &__text-box {
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light);
+    font-size: 3em;
+    flex-direction: column;
+    align-items: start;
+    animation: fadeIn 3s forwards;
+
+    &--heading {
+      font-size: 4rem;
+    }
+
+    &--span {
+      &-applications {
+        animation: applications;
+        animation-timing-function: steps(25, end);
+      }
+      &-design {
+        animation: design;
+        animation-timing-function: steps(16, end);
+      }
+      &-web3 {
+        animation: web3;
+        animation-timing-function: steps(6, end);
+      }
+      &-design,
+      &-applications,
+      &-web3 {
+        overflow: hidden;
+        white-space: nowrap;
+        display: inline-block;
+        position: absolute;
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
+      }
+
+      &-design::after,
+      &-applications::after,
+      &-web3::after {
+        content: '|';
+        position: absolute;
+        right: 0;
+        animation: caret infinite;
+        animation-duration: 1s;
+        animation-timing-function: steps(1, end);
+      }
+    }
+
+    &--button-1 {
+      position: absolute;
+      left: 0;
+      top: 11rem;
+      background: var(--light);
+      border: 1px var(--light) solid;
+      color: var(--dark);
+      font-size: 2rem;
+      padding: 0.5rem 1.5rem;
+      cursor: pointer;
+    }
+
+    &--button-2 {
+      position: absolute;
+      left: 15rem;
+      top: 11rem;
+      background: transparent;
+      border: 1px var(--light) solid;
+      color: var(--light);
+      font-size: 2rem;
+      padding: 0.5rem 1.5rem;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    &--button-1:hover,
+    &--button-2:hover {
+      transition: 0.2s all;
+      // animation: button 2s infinite;
+      box-shadow: 0 0 1rem rgba(255, 255, 255, 0.5);
+    }
+    &--button-1:active,
+    &--button-2:active {
+      transition: 0.2s all;
+      box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+      transform: translateY(2px);
+    }
+  }
+
   &::before {
     content: '';
-    height: 100vw;
-    width: 100vw;
+    height: 100vmax;
+    width: 100vmax;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,15 +111,15 @@
     position: absolute;
     bottom: -50%;
     left: -50%;
-    background: var(--background);
-    height: 200vw;
-    width: 200vw;
+    background: var(--light);
+    height: 200vmax;
+    width: 200vmax;
     border-radius: 45%;
-    animation: spin 3s ease-in-out forwards;
+    animation: spin 5s ease-in-out forwards;
   }
 }
 
-span {
+#bubbles {
   position: absolute;
   background: white;
   border-radius: 50%;

@@ -1,6 +1,7 @@
 const createBubbles = () => {
   const landingArea = document.querySelector('.landing');
   const bubble = document.createElement('span');
+  bubble.setAttribute('id', 'bubbles');
   let size = Math.random() * 100;
 
   bubble.style.height = 10 + size + 'px';

@@ -10,14 +10,14 @@
   <body>
     <div class="container">
       <div class="header">
-        <div class="header_logo">John Kirch</div>
+        <div class="header_logo"><a href="/">John Kirch</a></div>
         <div class="header_nav">
           <ul class="header_nav--list">
             <li class="header_nav--list-item">
-              <a href="#" class="header_nav--link">Projects</a>
+              <a href="#projects" class="header_nav--link">Projects</a>
             </li>
             <li class="header_nav--list-item">
-              <a href="#" class="header_nav--link">About</a>
+              <a href="#about" class="header_nav--link">About</a>
             </li>
             <li class="header_nav--list-item">
               <a href="#" class="header_nav--link">Service</a>
@@ -28,7 +28,35 @@
           </ul>
         </div>
       </div>
-      <div class="landing"></div>
+      <section class="landing">
+        <div class="landing__text-box">
+          <h1 class="landing__text-box--heading">John Kirch</h1>
+          <div class="landing__text-box--text">
+            <span class="landing__text-box--span-applications"
+              >Web Applications</span
+            >
+            <span class="landing__text-box--span-design">Web Design</span>
+            <span class="landing__text-box--span-web3">Web3</span>
+          </div>
+          <button
+            class="landing__text-box--button-1"
+            onclick="document.querySelector('#about').scrollIntoView();"
+          >
+            Know More
+          </button>
+          <button
+            class="landing__text-box--button-2"
+            onclick="document.querySelector('#contact').scrollIntoView();"
+          >
+            Hire Me
+          </button>
+        </div>
+      </section>
+      <section id="projects" class="projects">Projects Section</section>
+      <section id="about" class="about">About Section</section>
+      <section id="services" class="services">Services Section</section>
+      <section id="contact" class="contact">Contact Section</section>
+      <footer class="footer">Footer Section &copy; John Kirch Studios</footer>
     </div>
     <script src="./index.js"></script>
   </body>
