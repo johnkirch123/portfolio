@@ -20,7 +20,11 @@
     animation: fadeIn 3s forwards;
 
     &--heading {
-      font-size: 4rem;
+      font-size: 4.5rem;
+      margin-left: 2rem;
+      &-span {
+        margin-left: -2rem;
+      }
     }
 
     &--span {
@@ -39,6 +43,7 @@
       &-design,
       &-applications,
       &-web3 {
+        margin-top: 1rem;
         overflow: hidden;
         white-space: nowrap;
         display: inline-block;
@@ -62,7 +67,7 @@
     &--button-1 {
       position: absolute;
       left: 0;
-      top: 11rem;
+      top: 14rem;
       background: var(--light);
       border: 1px var(--light) solid;
       color: var(--dark);
@@ -73,8 +78,8 @@
 
     &--button-2 {
       position: absolute;
-      left: 15rem;
-      top: 11rem;
+      left: 16rem;
+      top: 14rem;
       background: transparent;
       border: 1px var(--light) solid;
       color: var(--light);

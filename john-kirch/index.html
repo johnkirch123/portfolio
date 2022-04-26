@@ -10,20 +10,20 @@
   <body>
     <div class="container">
       <div class="header">
-        <div class="header_logo"><a href="#landing">JK</a></div>
-        <div class="header_nav">
-          <ul class="header_nav--list">
-            <li class="header_nav--list-item">
-              <a href="#projects" class="header_nav--link">Projects</a>
+        <div class="header__logo"><a href="#landing">JK</a></div>
+        <div class="header__nav">
+          <ul class="header__nav--list">
+            <li class="header__nav--list-item">
+              <a href="#projects" class="header__nav--link">Projects</a>
             </li>
-            <li class="header_nav--list-item">
-              <a href="#about" class="header_nav--link">About</a>
+            <li class="header__nav--list-item">
+              <a href="#about" class="header__nav--link">About</a>
             </li>
-            <li class="header_nav--list-item">
-              <a href="#" class="header_nav--link">Services</a>
+            <li class="header__nav--list-item">
+              <a href="#skills" class="header__nav--link">Skills</a>
             </li>
-            <li class="header_nav--list-item">
-              <a href="#" class="header_nav--link">Contact</a>
+            <li class="header__nav--list-item">
+              <a href="#contact" class="header__nav--link">Contact</a>
             </li>
           </ul>
         </div>
@@ -31,18 +31,31 @@
       <div class="social">
         <ul class="social__icon-list">
           <li class="social__icon-list-item">
-            <a href="www.linkedin.com/in/johnkirchdev" class="social__icon-list-link"
-              ><img src="./img/linkedin-icon.png" alt="John Kirch Linkedin" class="social__icon-list-img"
+            <a
+              href="https://www.linkedin.com/in/johnkirchdev"
+              target="_blank"
+              class="social__icon-list-link"
+              ><img
+                src="./img/linkedin-icon.png"
+                alt="John Kirch Linkedin"
+                class="social__icon-list-img"
             /></a>
           </li>
           <li class="social__icon-list-item">
-            <a href="https://github.com/johnkirch123" class="social__icon-list-link"
-              ><img src="./img/github-icon.png" alt="John Kirch Github" class="social__icon-list-img"
+            <a
+              href="https://github.com/johnkirch123"
+              target="_blank"
+              class="social__icon-list-link"
+              ><img
+                src="./img/github-icon.png"
+                alt="John Kirch Github"
+                class="social__icon-list-img"
             /></a>
           </li>
           <li class="social__icon-list-item">
             <a
               href="https://www.codewars.com/users/johnkirch123"
+              target="_blank"
               class="social__icon-list-link"
               ><img
                 src="./img/codewars-icon.png"
@@ -54,7 +67,18 @@
       </div>
       <section id="landing" class="landing">
         <div class="landing__text-box">
-          <h1 class="landing__text-box--heading">John Kirch</h1>
+          <div class="landing__text-box--heading">
+            <span class="landing__text-box--heading-span">J</span>
+            <span class="landing__text-box--heading-span">o</span>
+            <span class="landing__text-box--heading-span">h</span>
+            <span class="landing__text-box--heading-span">n</span>
+            &nbsp;
+            <span class="landing__text-box--heading-span">K</span>
+            <span class="landing__text-box--heading-span">i</span>
+            <span class="landing__text-box--heading-span">r</span>
+            <span class="landing__text-box--heading-span">c</span>
+            <span class="landing__text-box--heading-span">h</span>
+          </div>
           <div class="landing__text-box--text">
             <span class="landing__text-box--span-applications"
               >Web Applications</span
@@ -76,12 +100,93 @@
           </button>
         </div>
       </section>
-      <section id="projects" class="projects">Projects Section</section>
-      <section id="about" class="about">About Section</section>
-      <section id="services" class="services">Services Section</section>
+      <section id="projects" class="projects">
+        <div class="projects__container">
+          <div class="projects__slider">
+            <input type="radio" name="slides" id="slides_1" checked />
+            <input type="radio" name="slides" id="slides_2" />
+            <input type="radio" name="slides" id="slides_3" />
+            <input type="radio" name="slides" id="slides_4" />
+            <input type="radio" name="slides" id="slides_N" />
+            <ul>
+              <li>
+                <a
+                  href="http://secret-tundra-67506.herokuapp.com/"
+                  target="_blank"
+                  ><img src="./img/emaily.PNG" alt="Emaily Website"
+                /></a>
+              </li>
+              <li>Content of slide 2</li>
+              <li>Content of slide 3</li>
+              <li>Content of slide 4</li>
+              <li>Content of slide N</li>
+            </ul>
+            <div class="arrows">
+              <label for="slides_1"></label>
+              <label for="slides_2"></label>
+              <label for="slides_3"></label>
+              <label for="slides_4"></label>
+              <label for="slides_N"></label>
+              <label for="slides_1" class="goto-first"></label>
+              <label for="slides_N" class="goto-last"></label>
+            </div>
+            <div class="navigation">
+              <div>
+                <label for="slides_1"></label>
+                <label for="slides_2"></label>
+                <label for="slides_3"></label>
+                <label for="slides_4"></label>
+                <label for="slides_N"></label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="about">
+        <p class="about__paragraph-1">
+          Hello and welcome to my portfolio site! My name is John Kirch and I’m
+          a web designer/developer living in Ringgold, GA. I’ve been a
+          programmer and developer for 6 years and have worked on projects
+          ranging from basic websites to full blown inventory management systems
+          and ecommerce stores for small to large companies. I work with the
+          customers from concept to deployment and everything in between.
+        </p>
+        <br />
+        <p class="about__paragraph-2">
+          I first got into programming when a need arose at a pharmaceutical
+          company where I worked as a maintenance technician. Once I started, I
+          was hooked! After a few months of learning Java I began to build my
+          first inventory management system for the company. It turned out
+          great, but I wanted it to be even better. I began to study web
+          technology and realized that the possibilities were endless. I spent a
+          couple of years learning the basics; from html, css, and javascript,
+          to react, redux, nodejs, express, databases, algorithms, etc. You get
+          the picture, there are never ending technologies and they are
+          constantly being updated and given more utility. This is one of my
+          favorite aspects of coding, the fact that you are always learning.
+          This is a very exciting space to be in and I’m glad to be a part of
+          it!
+        </p>
+        <br />
+        <p class="about__paragraph-3">
+          A little about me personally, I love the outdoors! I am living on a
+          horse farm where it is nice and quiet and I have plenty of time to
+          focus on work. In my spare time I try to get into the mountains with
+          my pup Percy or make it down to Atlanta from time to time to visit
+          family. I love sailing and look forward to retiring one day on a
+          sailboat in the Caribbean and hopefully one day sailing around the
+          world. I am a big believer in cryptocurrencies and the underlying
+          blockchain technology. I have a personal NFT project that I am
+          developing with web3 technologies and find a lot of enjoyment in
+          building an idea from the ground up. If you have any questions or
+          would like to request a quote for a project, please feel free to
+          contact me!
+        </p>
+      </section>
+      <section id="skills" class="skills"></section>
       <section id="contact" class="contact">Contact Section</section>
       <footer class="footer">Footer Section &copy; John Kirch Studios</footer>
     </div>
-    <script src="./index.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
