@@ -13,16 +13,17 @@
     &-item {
       margin-bottom: 1rem;
       list-style: none;
-    }
-
-    &-link {
-
+      transition: transform 0.2s ease-in-out;
+      &:hover {
+        transform: scale(1.2);
+      }
     }
 
     &-img {
       height: 4rem;
       width: 4rem;
       border-radius: 5%;
+      mix-blend-mode: multiply;
     }
   }
 }
