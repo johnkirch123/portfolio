@@ -16,6 +16,24 @@ html {
 body {
   font-family: 'Roboto Mono', monospace; }
 
+.social {
+  z-index: 10000;
+  position: fixed;
+  left: 0;
+  top: 36%;
+  animation: fadeIn 4s forwards; }
+  .social__icon-list {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem; }
+    .social__icon-list-item {
+      margin-bottom: 1rem;
+      list-style: none; }
+    .social__icon-list-img {
+      height: 4rem;
+      width: 4rem;
+      border-radius: 5%; }
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -23,47 +41,44 @@ body {
   position: fixed;
   z-index: 1000;
   font-size: 1.6rem;
-  background: var(--background); }
+  background: transparent; }
   .header_logo {
     position: relative;
-    background: var(--dark);
-    height: 5rem;
-    width: 5rem;
+    background: transparent;
+    font-size: 3rem;
     outline: 0;
     overflow: hidden;
-    cursor: pointer; }
-    .header_logo::before {
-      content: 'JK';
-      font-size: 2rem;
-      color: white;
-      height: 100%;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-    .header_logo::after {
-      content: '';
-      position: absolute;
-      bottom: -50%;
-      left: -50%;
-      background: var(--background);
-      height: 200%;
-      width: 200%;
-      border-radius: 45%;
-      animation: spin 4s ease-in-out forwards;
-      animation-delay: 0.8s; }
+    cursor: pointer;
+    margin-left: 1.5rem; }
+    .header_logo a {
+      text-decoration: none;
+      animation: linkFonts 2s forwards; }
   .header_nav {
     padding-right: 1rem; }
     .header_nav--list {
       display: flex;
       list-style: none;
       margin-top: 1rem; }
-      .header_nav--list-item a {
-        text-decoration: none;
-        color: black;
-        padding: 2rem;
-        cursor: pointer;
-        animation: linkFonts 2s forwards; }
+      .header_nav--list-item {
+        position: relative; }
+        .header_nav--list-item a {
+          text-decoration: none;
+          padding: 2rem;
+          cursor: pointer;
+          animation: linkFonts 2s forwards; }
+        .header_nav--list-item::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 10%;
+          height: 3px;
+          width: 80%;
+          background-color: var(--light);
+          transform: scaleX(0);
+          transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s; }
+        .header_nav--list-item:hover::after {
+          transform: scaleX(1);
+          width: 80%; }
 
 .landing {
   position: relative;
@@ -75,7 +90,7 @@ body {
   .landing__text-box {
     position: absolute;
     top: 35%;
-    left: 20%;
+    left: 25%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -283,9 +298,8 @@ body {
     width: 2.8em; } }
 
 @keyframes button {
-  0% {
+  0%,
+  100% {
     box-shadow: 0 0 1rem rgba(255, 255, 255, 0.5); }
   50% {
-    box-shadow: 0 0 0 rgba(255, 255, 255, 0.5); }
-  100% {
-    box-shadow: 0 0 1rem rgba(255, 255, 255, 0.5); } }
+    box-shadow: 0 0 0 rgba(255, 255, 255, 0.5); } }

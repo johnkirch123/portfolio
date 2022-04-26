@@ -15,8 +15,12 @@ const createBubbles = () => {
   }, 5000);
 };
 
-const bubbleInterval = setInterval(createBubbles, 10);
+const heavyBubbles = setInterval(createBubbles, 10);
+const lightBubbles = setInterval(createBubbles, 300);
 
 setTimeout(() => {
-  clearInterval(bubbleInterval, 1300);
-}, 1500);
+  clearInterval(heavyBubbles);
+}, 1200);
+setTimeout(() => {
+  clearInterval(lightBubbles);
+}, 3500);

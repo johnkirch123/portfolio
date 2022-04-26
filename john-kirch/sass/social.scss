@@ -1,0 +1,28 @@
+.social {
+  z-index: 10000;
+  position: fixed;
+  left: 0;
+  top: 36%;
+  animation: fadeIn 4s forwards;
+
+  &__icon-list {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+
+    &-item {
+      margin-bottom: 1rem;
+      list-style: none;
+    }
+
+    &-link {
+
+    }
+
+    &-img {
+      height: 4rem;
+      width: 4rem;
+      border-radius: 5%;
+    }
+  }
+}
