@@ -425,6 +425,10 @@ label:nth-of-type(11):after {
   height: 55rem;
   width: 100%;
   background-color: #888; }
+  .contact__heading {
+    text-align: center;
+    font-size: 2em;
+    padding: 4rem 10rem; }
   .contact__form {
     width: 60%;
     margin: 0 auto;
@@ -438,7 +442,7 @@ label:nth-of-type(11):after {
         width: 100%;
         display: flex;
         justify-content: space-between;
-        margin: 5rem 0; }
+        margin: 2rem 0; }
     .contact__form-text-area {
       width: 40rem;
       height: 20rem;
