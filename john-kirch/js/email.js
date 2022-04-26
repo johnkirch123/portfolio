@@ -1,14 +1,29 @@
+(function () {
+  emailjs.init('0Ia7EDJzNo_vGHJGA');
+})();
+
 window.onload = function () {
   document
-    .getElementById('contact-form')
+    .querySelector('#contact__form')
     .addEventListener('submit', function (event) {
       event.preventDefault();
-      // generate a five digit number for the contact_number variable
       this.contact_number.value = (Math.random() * 100000) | 0;
-      // these IDs from the previous steps
-      emailjs.sendForm('contact_service', 'contact_form', this).then(
-        function () {
-          console.log('SUCCESS!');
+      setTimeout(() => {
+        document
+          .querySelector('.contact__form-toasty')
+          .setAttribute('display', 'block');
+      }, 3000);
+      emailjs.sendForm('service_5nrcgxt', 'template_nuvh7dt', this).then(
+        () => {
+          document.querySelector('#user_name').value = '';
+          document.querySelector('#user_email').value = '';
+          document.querySelector('#user_message').value = '';
+          document.querySelector('.contact__form-toasty').style.display =
+            'inline-block';
+          setTimeout(() => {
+            document.querySelector('.contact__form-toasty').style.display =
+              'none';
+          }, 6000);
         },
         function (error) {
           console.log('FAILED...', error);
