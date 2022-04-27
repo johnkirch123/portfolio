@@ -110,14 +110,14 @@ body {
     animation: fadeIn 3s forwards; }
     .landing__text-box--heading {
       font-size: 4.5rem;
-      margin-left: 2rem; }
+      margin-left: 2rem;
+      cursor: pointer; }
       .landing__text-box--heading-span {
         display: inline-block;
         margin-left: -2rem;
-        cursor: pointer;
         transition: all 0.2s ease-in-out; }
         .landing__text-box--heading-span:hover {
-          transform: scale(0.7) rotate(15deg); }
+          transform: scale(1.5); }
     .landing__text-box--span-applications {
       animation: applications;
       animation-timing-function: steps(25, end); }
@@ -205,6 +205,8 @@ body {
     .projects {
       -webkit-clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
       clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%); } }
+  .projects__images {
+    width: 100%; }
   .projects__container {
     display: flex;
     justify-content: center;
@@ -418,6 +420,14 @@ label:nth-of-type(11):after {
   padding-top: 15rem;
   font-size: 1.6em;
   background-color: #aaa; }
+  .about__image--john {
+    width: 30%;
+    min-width: 30%;
+    float: right;
+    margin: 5rem 2rem;
+    border-radius: 50%;
+    -webkit-shape-outside: circle();
+    shape-outside: circle(); }
   .about > p {
     text-indent: 3rem; }
 

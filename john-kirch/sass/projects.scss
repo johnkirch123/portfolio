@@ -8,6 +8,10 @@
     clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
   }
 
+  &__images {
+    width: 100%;
+  }
+
   &__container {
     display: flex;
     justify-content: center;

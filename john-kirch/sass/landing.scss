@@ -22,13 +22,13 @@
     &--heading {
       font-size: 4.5rem;
       margin-left: 2rem;
+      cursor: pointer;
       &-span {
         display: inline-block;
         margin-left: -2rem;
-        cursor: pointer;
         transition: all 0.2s ease-in-out;
         &:hover {
-          transform: scale(0.7) rotate(15deg);
+          transform: scale(1.5);
         }
       }
     }

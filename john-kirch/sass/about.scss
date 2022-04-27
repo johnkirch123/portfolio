@@ -4,6 +4,19 @@
   font-size: 1.6em;
   background-color: #aaa;
 
+  &__paragraph-2--group {
+  }
+
+  &__image--john {
+    width: 30%;
+    min-width: 30%;
+    float: right;
+    margin: 5rem 2rem;
+    border-radius: 50%;
+    -webkit-shape-outside: circle();
+    shape-outside: circle();
+  }
+
   & > p {
     text-indent: 3rem;
   }
