@@ -148,8 +148,8 @@
           a web designer/developer living in Ringgold, GA. I’ve been a
           programmer and developer for 6 years and have worked on projects
           ranging from basic websites to full blown inventory management systems
-          and ecommerce stores for small to large companies. I work with the
-          customers from concept to deployment and everything in between.
+          and ecommerce stores for small to large companies. I work with clients
+          from concept to deployment and everything in between.
         </p>
         <br />
         <p class="about__paragraph-2">
@@ -186,54 +186,64 @@
       <section id="skills" class="skills"></section>
       <section id="contact" class="contact">
         <h3 class="contact__heading">
-          If you would like a quote on a project please shoot me an email and I
-          will get back to you as soon as possible.
+          If you would like a quote for a project please shoot me an email and I
+          will follow up with you in 1-2 business days.
         </h3>
         <form id="contact__form" class="contact__form">
           <input type="hidden" name="contact_number" />
-          <div class="contact__form-input-group">
-            <div>
-              <label class="contact__form-label">Name</label>
+          <div class="contact__form--input-group">
+            <div class="contact__form--name">
+              <label class="contact__form--label">Name</label>
               <input
                 id="user_name"
                 type="text"
                 name="user_name"
-                class="contact__form-input"
+                class="contact__form--input"
               />
             </div>
-            <div>
-              <label class="contact__form-label">Email</label>
+            <div class="contact__form--email">
+              <label class="contact__form--label">Email</label>
               <input
                 id="user_email"
                 type="email"
                 name="user_email"
-                class="contact__form-input"
+                class="contact__form--input"
               />
             </div>
           </div>
-
-          <div class="contact__form-input-group">
-            <label class="contact__form-label">Message</label>
+          <div class="contact__form--input-group">
+            <label class="contact__form--label">Message</label>
             <textarea
               id="user_message"
               name="message"
-              class="contact__form-text-area"
+              class="contact__form--text-area"
             ></textarea>
           </div>
           <input type="submit" value="Send" class="contact__form-button" />
-          <div class="contact__form-toasty">
-            Your Message Has successfully been sent. Please expect a reply back
-            within 1-2 business days. Thank you!
-          </div>
         </form>
+        <div class="contact__form--message"></div>
       </section>
-      <footer class="footer">Footer Section &copy; John Kirch Studios</footer>
+      <footer class="footer">
+        <div class="footer__nav">
+          <ul class="footer__nav--list">
+            <li class="footer__nav--list-item">
+              <a href="#projects" class="footer__nav--link">Projects</a>
+            </li>
+            <li class="footer__nav--list-item">
+              <a href="#about" class="footer__nav--link">About</a>
+            </li>
+            <li class="footer__nav--list-item">
+              <a href="#skills" class="footer__nav--link">Skills</a>
+            </li>
+            <li class="footer__nav--list-item">
+              <a href="#contact" class="footer__nav--link">Contact</a>
+            </li>
+          </ul>
+          <p>&copy; John Kirch Studios</p>
+        </div>
+      </footer>
     </div>
     <script src="./js/index.js"></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-    ></script>
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"

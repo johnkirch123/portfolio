@@ -15,11 +15,13 @@ window.onload = function () {
       if (document.querySelector('#user_message').value === '')
         message('Please enter some information about your request.');
       else {
+        console.log(this);
+
         emailjs.sendForm('service_5nrcgxt', 'template_nuvh7dt', this).then(
           () => {
             clearInputs();
             message(
-              'Your Message has successfully been sent. Please expect a reply back within 1-2 business days. Thank you!'
+              'Your Message Has successfully been sent. Please expect a reply back within 1-2 business days. Thank you!'
             );
           },
           (error) => {

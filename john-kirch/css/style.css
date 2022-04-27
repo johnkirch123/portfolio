@@ -8,6 +8,7 @@
 
 :root {
   --light: #f8f8f8;
+  --light-medium: #ddd;
   --medium: #3a3a3a;
   --dark: #303032;
   --very-dark: #222; }
@@ -68,7 +69,7 @@ body {
       margin-top: 1rem; }
       .header__nav--list-item {
         position: relative;
-        padding-bottom: 0.1rem; }
+        padding-bottom: 0.3rem; }
         .header__nav--list-item a {
           text-decoration: none;
           padding: 2rem;
@@ -111,7 +112,12 @@ body {
       font-size: 4.5rem;
       margin-left: 2rem; }
       .landing__text-box--heading-span {
-        margin-left: -2rem; }
+        display: inline-block;
+        margin-left: -2rem;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out; }
+        .landing__text-box--heading-span:hover {
+          transform: scale(0.7) rotate(15deg); }
     .landing__text-box--span-applications {
       animation: applications;
       animation-timing-function: steps(25, end); }
@@ -350,7 +356,7 @@ label:nth-of-type(11):after {
       position: absolute;
       top: -50%;
       padding: 13px;
-      box-shadow: inset 2px -2px 0 1px var(--medium);
+      box-shadow: inset 2px -2px 0 1px var(--light-medium);
       cursor: pointer;
       -moz-transition: box-shadow 0.15s, margin 0.15s;
       -o-transition: box-shadow 0.15s, margin 0.15s;
@@ -412,6 +418,8 @@ label:nth-of-type(11):after {
   padding-top: 15rem;
   font-size: 1.6em;
   background-color: #aaa; }
+  .about > p {
+    text-indent: 3rem; }
 
 .skills {
   height: 100vh;
@@ -422,33 +430,43 @@ label:nth-of-type(11):after {
     height: 100%; }
 
 .contact {
-  height: 55rem;
+  height: min-content;
   width: 100%;
-  background-color: #888; }
+  background-color: #888;
+  padding: 3rem; }
   .contact__heading {
     text-align: center;
     font-size: 2em;
-    padding: 4rem 10rem; }
+    padding: 2rem 10rem; }
   .contact__form {
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     font-size: 1.6em; }
-    .contact__form-input {
-      width: 20rem;
-      font-size: 1.2em; }
-      .contact__form-input-group {
+    .contact__form--label {
+      margin: 0 0.5rem; }
+    .contact__form--name {
+      display: flex;
+      width: 40%; }
+    .contact__form--email {
+      display: flex;
+      width: 60%;
+      margin-left: 1rem; }
+    .contact__form--input {
+      font-size: 0.7em;
+      width: 100%; }
+      .contact__form--input-group {
         width: 100%;
         display: flex;
-        justify-content: space-between;
         margin: 2rem 0; }
-    .contact__form-text-area {
-      width: 40rem;
+    .contact__form--text-area {
+      width: 100%;
       height: 20rem;
-      font-size: 1.2em; }
+      font-size: 1.2em;
+      margin-left: 1rem; }
     .contact__form-button {
-      margin: 0 auto;
+      margin: 1rem auto;
       background: transparent;
       border: 1px var(--light) solid;
       color: var(--light);
@@ -463,16 +481,60 @@ label:nth-of-type(11):after {
         transition: 0.2s all;
         box-shadow: 0 0 0 rgba(255, 255, 255, 0);
         transform: translateY(2px); }
-    .contact__form-toasty {
-      margin-top: 3rem;
-      font-size: 0.8em;
-      display: none; }
+    .contact__form--message {
+      font-size: 1em;
+      margin-top: 1rem;
+      min-height: 1.6em;
+      text-align: center; }
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border: 1px solid black;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  padding: 0.2rem 1rem; }
 
 .footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  z-index: 1000;
+  padding: 1rem;
+  font-size: 1.6rem;
   color: #eee;
-  height: 200px;
-  width: 100%;
   background-color: #222; }
+  .footer p {
+    padding: 1rem 0; }
+  .footer__nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center; }
+    .footer__nav--list {
+      display: flex;
+      list-style: none;
+      margin-top: 1rem; }
+      .footer__nav--list-item {
+        position: relative;
+        padding-bottom: 0.3rem; }
+        .footer__nav--list-item a {
+          text-decoration: none;
+          padding: 2rem;
+          cursor: pointer;
+          animation: linkFonts 2s forwards; }
+        .footer__nav--list-item::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 10%;
+          height: 3px;
+          width: 80%;
+          background-color: var(--light);
+          transform: scaleX(0);
+          transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s; }
+        .footer__nav--list-item:hover::after {
+          transform: scaleX(1);
+          width: 80%; }
 
 @keyframes spin {
   0% {
