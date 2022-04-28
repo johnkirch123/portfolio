@@ -1,11 +1,11 @@
 import React from 'react';
 import sunrise from '../icons/sunrise.png';
 import sunset from '../icons/sunset.png';
-import config from '../config/default.json';
+import keys from '../config/default.json';
 
 const SunStateComponent = ({ sunTime, icon, dateTime, timezoneOffset }) => {
   const sunTimeString = new Date(
-    (sunTime + timezoneOffset + config.locationOffset) * 1000
+    (sunTime + timezoneOffset + keys.locationOffset) * 1000
   ).toString();
   const sunTimeArray = sunTimeString.split(' ');
 

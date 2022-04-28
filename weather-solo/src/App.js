@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import keys from '../src/config/keys';
+import keys from '../src/config/default.json';
 import IconComponent from './components/IconComponent';
 import WeatherComponent from './components/WeatherComponent';
 import AuxillaryWeatherComponent from './components/AuxillaryWeatherComponent';
