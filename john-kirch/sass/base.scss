@@ -12,6 +12,7 @@
   --medium: #3a3a3a;
   --dark: #303032;
   --very-dark: #222;
+  --extreme-dark: #000;
 }
 
 html {
@@ -19,9 +20,17 @@ html {
 }
 
 .container {
-}
+  position: relative;
 
-body {
-  background-color: rgba(86, 136, 201, 0.5);
-  z-index: 100000;
+  &__color-button {
+    height: 4rem;
+    width: 4rem;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    z-index: 100000;
+  }
 }

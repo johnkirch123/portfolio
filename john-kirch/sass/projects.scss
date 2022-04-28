@@ -8,6 +8,13 @@
     clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
   }
 
+  &__info {
+    color: var(--light);
+    width: 50%;
+    text-align: center;
+    margin: 2rem auto;
+  }
+
   &__images {
     width: 100%;
   }

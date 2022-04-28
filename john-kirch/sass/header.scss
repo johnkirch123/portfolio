@@ -17,6 +17,12 @@
     overflow: hidden;
     cursor: pointer;
     margin-left: 1.5rem;
+    transition: transform 0.5s ease-in-out;
+
+    &:hover {
+      // animation: logo 1s linear;
+      transform: rotate(360deg) scale(1.2);
+    }
 
     & a {
       text-decoration: none;

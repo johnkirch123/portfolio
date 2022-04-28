@@ -11,14 +11,24 @@
   --light-medium: #ddd;
   --medium: #3a3a3a;
   --dark: #303032;
-  --very-dark: #222; }
+  --very-dark: #222;
+  --extreme-dark: #000; }
 
 html {
   scroll-behavior: smooth; }
 
-body {
-  background-color: rgba(86, 136, 201, 0.5);
-  z-index: 100000; }
+.container {
+  position: relative; }
+  .container__color-button {
+    height: 4rem;
+    width: 4rem;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    z-index: 100000; }
 
 body {
   font-family: 'Roboto Mono', monospace; }
@@ -61,7 +71,10 @@ body {
     outline: 0;
     overflow: hidden;
     cursor: pointer;
-    margin-left: 1.5rem; }
+    margin-left: 1.5rem;
+    transition: transform 0.5s ease-in-out; }
+    .header__logo:hover {
+      transform: rotate(360deg) scale(1.2); }
     .header__logo a {
       text-decoration: none;
       animation: linkFonts 2s forwards; }
@@ -123,18 +136,6 @@ body {
         transition: all 0.2s ease-in-out; }
         .landing__text-box--heading-span:hover {
           transform: scale(1.5); }
-    .landing__text-box--color-button {
-      height: 4rem;
-      width: 4rem;
-      cursor: pointer;
-      border-radius: 50%;
-      border: none;
-      margin-left: 3rem;
-      margin-top: 1rem;
-      transition: transform 0.2s ease-in-out;
-      animation: pulse 3s infinite; }
-      .landing__text-box--color-button:hover {
-        transform: scale(1.2); }
     .landing__text-box--span-applications {
       animation: applications;
       animation-timing-function: steps(25, end); }
@@ -222,6 +223,11 @@ body {
     .projects {
       -webkit-clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
       clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%); } }
+  .projects__info {
+    color: var(--light);
+    width: 50%;
+    text-align: center;
+    margin: 2rem auto; }
   .projects__images {
     width: 100%; }
   .projects__container {
@@ -436,7 +442,8 @@ label:nth-of-type(11):after {
   padding: 10rem;
   padding-top: 15rem;
   font-size: 1.6em;
-  background-color: var(--light-medium); }
+  background-color: var(--light-medium);
+  color: var(--extreme-dark); }
   .about__image--john {
     width: 30%;
     min-width: 30%;
@@ -539,7 +546,8 @@ label:nth-of-type(11):after {
   height: min-content;
   width: 100%;
   background-color: var(--light-medium);
-  padding: 3rem; }
+  padding: 3rem;
+  color: var(--extreme-dark); }
   .contact__heading {
     text-align: center;
     font-size: 2em;
@@ -661,7 +669,17 @@ textarea:focus {
   100% {
     transform: scale(1); }
   50% {
-    transform: scale(1.2); } }
+    transform: scale(1.1); } }
+
+@keyframes logo {
+  0% {
+    transform: scale(1); }
+  20% {
+    transform: scale(1.1) rotate(0deg); }
+  80% {
+    transform: scale(1.1) rotate(360deg); }
+  100% {
+    transform: scale(1) rotate(306deg); } }
 
 @keyframes bubbles {
   0% {
