@@ -28,7 +28,10 @@ html {
     position: fixed;
     bottom: 3rem;
     right: 3rem;
-    z-index: 100000; }
+    z-index: 100000;
+    transition: transform 0.2s ease-in-out; }
+    .container__color-button:hover {
+      transform: scale(1.1); }
 
 body {
   font-family: 'Roboto Mono', monospace; }

@@ -32,5 +32,10 @@ html {
     bottom: 3rem;
     right: 3rem;
     z-index: 100000;
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }
