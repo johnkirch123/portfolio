@@ -19,6 +19,16 @@
   }
 }
 
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
 @keyframes bubbles {
   0% {
     border-radius: 50% 55% 45% 50% / 43% 65% 38% 42%;

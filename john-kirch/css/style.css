@@ -17,6 +17,10 @@ html {
   scroll-behavior: smooth; }
 
 body {
+  background-color: rgba(86, 136, 201, 0.5);
+  z-index: 100000; }
+
+body {
   font-family: 'Roboto Mono', monospace; }
 
 .social {
@@ -111,13 +115,26 @@ body {
     .landing__text-box--heading {
       font-size: 4.5rem;
       margin-left: 2rem;
-      cursor: pointer; }
+      cursor: pointer;
+      display: flex; }
       .landing__text-box--heading-span {
         display: inline-block;
         margin-left: -2rem;
         transition: all 0.2s ease-in-out; }
         .landing__text-box--heading-span:hover {
           transform: scale(1.5); }
+    .landing__text-box--color-button {
+      height: 4rem;
+      width: 4rem;
+      cursor: pointer;
+      border-radius: 50%;
+      border: none;
+      margin-left: 3rem;
+      margin-top: 1rem;
+      transition: transform 0.2s ease-in-out;
+      animation: pulse 3s infinite; }
+      .landing__text-box--color-button:hover {
+        transform: scale(1.2); }
     .landing__text-box--span-applications {
       animation: applications;
       animation-timing-function: steps(25, end); }
@@ -419,7 +436,7 @@ label:nth-of-type(11):after {
   padding: 10rem;
   padding-top: 15rem;
   font-size: 1.6em;
-  background-color: #aaa; }
+  background-color: var(--light-medium); }
   .about__image--john {
     width: 30%;
     min-width: 30%;
@@ -521,7 +538,7 @@ label:nth-of-type(11):after {
 .contact {
   height: min-content;
   width: 100%;
-  background-color: #888;
+  background-color: var(--light-medium);
   padding: 3rem; }
   .contact__heading {
     text-align: center;
@@ -590,8 +607,8 @@ textarea:focus {
   z-index: 1000;
   padding: 1rem;
   font-size: 1.6rem;
-  color: #eee;
-  background-color: #222; }
+  color: var(--light);
+  background-color: var(--very-dark); }
   .footer p {
     padding: 1rem 0; }
   .footer__nav {
@@ -638,6 +655,13 @@ textarea:focus {
     color: var(--dark); }
   100% {
     color: var(--light); } }
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.2); } }
 
 @keyframes bubbles {
   0% {

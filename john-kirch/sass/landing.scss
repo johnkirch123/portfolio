@@ -23,6 +23,7 @@
       font-size: 4.5rem;
       margin-left: 2rem;
       cursor: pointer;
+      display: flex;
       &-span {
         display: inline-block;
         margin-left: -2rem;
@@ -30,6 +31,22 @@
         &:hover {
           transform: scale(1.5);
         }
+      }
+    }
+
+    &--color-button {
+      height: 4rem;
+      width: 4rem;
+      cursor: pointer;
+      border-radius: 50%;
+      border: none;
+      margin-left: 3rem;
+      margin-top: 1rem;
+      transition: transform 0.2s ease-in-out;
+      animation: pulse 3s infinite;
+
+      &:hover {
+        transform: scale(1.2);
       }
     }
 
