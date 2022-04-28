@@ -6,6 +6,7 @@ const AuxillaryWeatherComponent = ({ forecast }) => {
     <div className='weather__box--aux'>
       {forecast.map((day) => (
         <div key={day.sunrise}>
+          <p>{new Date(day.sunrise * 1000).toString().split(' ')[0]}</p>
           <img
             className='icon__aux'
             src={getIcon(day.weather[0].main)}

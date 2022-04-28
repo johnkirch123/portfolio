@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import config from '../src/config/default.json';
+import keys from '../src/config/keys';
 import IconComponent from './components/IconComponent';
 import WeatherComponent from './components/WeatherComponent';
 import AuxillaryWeatherComponent from './components/AuxillaryWeatherComponent';
@@ -30,7 +30,7 @@ function App() {
     const fetchData = async () => {
       const { lat, lon, location } = weatherObject;
       await fetch(
-        `${config.baseUrl}/onecall?lat=${lat}&lon=${lon}&units=imperial&exclude=minutely,hourly&appid=${config.apiKey}`
+        `${keys.baseUrl}/onecall?lat=${lat}&lon=${lon}&units=imperial&exclude=minutely,hourly&appid=${keys.apiKey}`
       )
         .then((res) => res.json())
         .then((result) => {
@@ -54,7 +54,7 @@ function App() {
   const handleSearch = (e) => {
     if (e.key === 'Enter') {
       fetch(
-        `http://api.positionstack.com/v1/forward?access_key=${config.positionStack_apiKey}&query=${e.target.value}`
+        `http://api.positionstack.com/v1/forward?access_key=${keys.positionStackApiKey}&query=${e.target.value}`
       )
         .then((res) => res.json())
         .then((result) => {
@@ -62,7 +62,7 @@ function App() {
             const lat = result.data[0].latitude;
             const long = result.data[0].longitude;
             fetch(
-              `${config.baseUrl}/onecall?lat=${lat}&lon=${long}&units=imperial&exclude=minutely,hourly&appid=${config.apiKey}`
+              `${keys.baseUrl}/onecall?lat=${lat}&lon=${long}&units=imperial&exclude=minutely,hourly&appid=${keys.apiKey}`
             )
               .then((res) => res.json())
               .then((result) => {
