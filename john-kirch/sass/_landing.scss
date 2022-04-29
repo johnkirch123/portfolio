@@ -1,39 +1,70 @@
 .landing {
   position: relative;
+  font-size: 5em;
   background: var(--dark);
-  height: 100vh;
-  width: 100vw;
+  height: 120vh;
+  width: 100%;
   outline: 0;
+  margin-top: -7.2rem;
   overflow: hidden;
+  @include respond(tab-land) {
+    // width < 1200?
+    height: 65vh;
+  }
 
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--light);
+    flex-direction: column;
+    cursor: default;
+    align-items: start;
+    animation: fadeIn 3s forwards;
+    &--text {
+      font-size: 3.5em;
+      line-height: 27rem;
+      opacity: 0.25;
+
+      @media (max-width: 1355px) {
+        font-size: 2.5em;
+        line-height: 10rem;
+      }
+      @media (max-width: 1115px) {
+        font-size: 3.5em;
+        line-height: 35rem;
+      }
+    }
+    &--span {
+      &:hover {
+        animation: fadeOutIn 3s infinite;
+      }
+    }
+  }
   &__text-box {
     position: absolute;
-    top: 35%;
-    left: 25%;
+    top: 40%;
+    left: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--light);
-    font-size: 3em;
     flex-direction: column;
     align-items: start;
+    font-size: 2.5rem;
     animation: fadeIn 3s forwards;
 
-    &--heading {
-      font-size: 4.5rem;
-      margin-left: 2rem;
-      cursor: pointer;
-      display: flex;
-      &-span {
-        display: inline-block;
-        margin-left: -2rem;
-        transition: all 0.2s ease-in-out;
-        &:hover {
-          transform: scale(1.5);
-        }
+    @media (max-width: 830px) {
+      left: 35%;
+    }
+    &--text {
+      position: absolute;
+    }
+    &--span {
+      &:hover {
+        animation: fadeOutIn 3s infinite;
       }
     }
-
     &--span {
       &-applications {
         animation: applications;
@@ -74,23 +105,25 @@
     &--button-1 {
       position: absolute;
       left: 0;
-      top: 14rem;
+      top: 6rem;
+      width: max-content;
       background: var(--light);
       border: 1px var(--light) solid;
       color: var(--dark);
-      font-size: 2rem;
+      font-size: 0.5em;
       padding: 0.5rem 1.5rem;
+      word-wrap: none;
       cursor: pointer;
     }
 
     &--button-2 {
       position: absolute;
-      left: 16rem;
-      top: 14rem;
+      left: 10rem;
+      top: 6rem;
       background: transparent;
       border: 1px var(--light) solid;
       color: var(--light);
-      font-size: 2rem;
+      font-size: 0.5em;
       padding: 0.5rem 1.5rem;
       cursor: pointer;
       white-space: nowrap;

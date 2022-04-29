@@ -11,7 +11,7 @@
   <body>
     <div class="container">
       <button class="container__color-button"></button>
-      <!-- <div class="header">
+      <div class="header">
         <div class="header__logo"><a href="#landing">JK</a></div>
         <div class="header__nav">
           <ul class="header__nav--list">
@@ -29,56 +29,7 @@
             </li>
           </ul>
         </div>
-      </div> -->
-      <nav class="nav">
-        <div class="nav__logo"><a href="#landing" onclick="uncheck()"">JK</a></div>
-
-        <ul class="nav__list">
-          <li class="nav__list-item nav__nav-link">
-            <a href="#projects" class="nav__link">Projects</a>
-          </li>
-          <li class="nav__list-item nav__nav-link">
-            <a href="#about" class="nav__link">About</a>
-          </li>
-          <li class="nav__list-item nav__nav-link">
-            <a href="#portfolio" class="nav__link">Skills</a>
-          </li>
-          <li class="nav__list-item nav__nav-link">
-            <a href="#" class="nav__link">Contact</a>
-          </li>
-        </ul>
-
-        <input type="checkbox" class="nav__checkbox" id="navi-toggle" />
-
-        <label id="nav__btn" for="navi-toggle" class="nav__button hidden">
-          <span class="nav__icon"> &nbsp; </span>
-        </label>
-
-        <div id="nav__bg" class="nav__background hidden">&nbsp;</div>
-
-        <nav class="nav__nav">
-          <ul class="nav__list-2">
-            <li class="nav__item">
-              <a href="#projects" class="nav__link-2" onclick="uncheck()"
-                >Projects</a
-              >
-            </li>
-            <li class="nav__item">
-              <a href="#about" class="nav__link-2" onclick="uncheck()">About</a>
-            </li>
-            <li class="nav__item">
-              <a href="#skills" class="nav__link-2" onclick="uncheck()"
-                >Skills</a
-              >
-            </li>
-            <li class="nav__item">
-              <a href="#contact" class="nav__link-2" onclick="uncheck()"
-                >Contact</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </nav>
+      </div>
       <div class="social">
         <ul class="social__icon-list">
           <li class="social__icon-list-item">
@@ -117,22 +68,21 @@
         </ul>
       </div>
       <section id="landing" class="landing">
-        <div class="landing__background">
-          <div class="landing__background--text">
-            <span class="landing__background--span">J</span>
-            <span class="landing__background--span">o</span>
-            <span class="landing__background--span">h</span>
-            <span class="landing__background--span">n</span>
-          </div>
-          <div class="landing__background--text">
-            <span class="landing__background--span">K</span>
-            <span class="landing__background--span">i</span>
-            <span class="landing__background--span">r</span>
-            <span class="landing__background--span">c</span>
-            <span class="landing__background--span">h</span>
-          </div>
-        </div>
         <div class="landing__text-box">
+          <div class="landing__text-box--heading">
+            <div class="landing__text-box--heading-text">
+              <span class="landing__text-box--heading-span">J</span>
+              <span class="landing__text-box--heading-span">o</span>
+              <span class="landing__text-box--heading-span">h</span>
+              <span class="landing__text-box--heading-span">n</span>
+              &nbsp;
+              <span class="landing__text-box--heading-span">K</span>
+              <span class="landing__text-box--heading-span">i</span>
+              <span class="landing__text-box--heading-span">r</span>
+              <span class="landing__text-box--heading-span">c</span>
+              <span class="landing__text-box--heading-span">h</span>
+            </div>
+          </div>
           <div class="landing__text-box--text">
             <span class="landing__text-box--span-applications"
               >Web Applications</span
@@ -165,7 +115,7 @@
             <ul>
               <li>
                 <a
-                  href="http://secret-tundra-67506.herokuapp.com/"
+                  href="http://peaceful-temple-95021.herokuapp.com/"
                   target="_blank"
                   ><img
                     class="projects__images"
@@ -238,7 +188,6 @@
         </p>
       </section>
       <section id="about" class="about">
-        <div class="about__container">
         <p class="about__paragraph-1">
           Hello and welcome to my portfolio site! My name is John Kirch and I’m
           a web designer/developer living in Ringgold, GA. I’ve been a
@@ -279,7 +228,6 @@
           would like to request a quote for a project, please feel free to
           contact me!
         </p>
-      </div>
       </section>
       <section id="skills" class="skills">
         <div class="gallery">
@@ -457,7 +405,6 @@
       </footer>
     </div>
     <script src="./js/index.js"></script>
-    <script src="./js/main.js"></script>
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"

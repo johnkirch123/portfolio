@@ -1,8 +1,8 @@
 .social {
   z-index: 10000;
   position: fixed;
-  left: 0;
-  top: 36%;
+  margin-left: 1%;
+  margin-top: 30vh;
   animation: fadeIn 4s forwards;
 
   &__icon-list {
@@ -20,8 +20,8 @@
     }
 
     &-img {
-      height: 4rem;
-      width: 4rem;
+      height: 3rem;
+      width: 3rem;
       border-radius: 5%;
       mix-blend-mode: multiply;
     }

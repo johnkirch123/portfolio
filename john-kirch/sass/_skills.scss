@@ -17,6 +17,13 @@
   grid-row: 1 / 3;
   grid-gap: 1rem;
   padding: 5rem;
+
+  @include respond(tab-port) {
+    // width < 900?
+    padding: 0;
+    grid-template-columns: repeat(8, 10vw);
+    grid-template-rows: repeat(7, 10vw);
+  }
   &__item {
     &--1 {
       grid-row: 1 / span 2;
