@@ -40,6 +40,7 @@ document.querySelector('#navi-toggle').addEventListener('change', () => {
 });
 
 const hiddenDisplay = () => {
+  console.log('is checked', document.querySelector('#navi-toggle').checked);
   if (document.querySelector('#navi-toggle').checked) {
     document.querySelectorAll('.nav__link-2').forEach((element) => {
       element.classList.remove('no-display');

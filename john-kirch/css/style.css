@@ -270,7 +270,7 @@ body {
   position: relative;
   font-size: 5em;
   background: linear-gradient(to bottom left, var(--medium), var(--extreme-dark));
-  height: 100vh;
+  height: 110vh;
   width: 100%;
   outline: 0;
   margin-top: -7.2rem;
