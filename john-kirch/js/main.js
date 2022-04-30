@@ -42,22 +42,20 @@ document.querySelector('#navi-toggle').addEventListener('change', () => {
 const hiddenDisplay = () => {
   if (document.querySelector('#navi-toggle').checked) {
     document.querySelectorAll('.nav__link-2').forEach((element) => {
-      element.classList.add('inline-block-display');
+      element.classList.remove('no-display');
     });
     document.querySelectorAll('.nav__link-2').forEach((element) => {
-      element.classList.remove('no-display');
+      element.classList.add('inline-block-display');
     });
   } else {
     document.querySelectorAll('.nav__link-2').forEach((element) => {
-      element.classList.add('no-display');
+      element.classList.remove('inline-block-display');
     });
     document.querySelectorAll('.nav__link-2').forEach((element) => {
-      element.classList.remove('inline-block-display');
+      element.classList.add('no-display');
     });
   }
 };
-
-hiddenDisplay();
 
 function uncheck() {
   document.querySelector('#navi-toggle').checked = false;
