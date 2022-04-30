@@ -189,7 +189,6 @@ body {
   .nav__item {
     margin: 1rem; }
   .nav__link-2:link, .nav__link-2:visited {
-    display: inline-block;
     font-size: 3rem;
     font-weight: 300;
     padding: 1rem 2rem;
@@ -261,10 +260,16 @@ body {
   align-items: center;
   z-index: 1; }
 
+.no-display {
+  display: none; }
+
+.inline-block-display {
+  display: inline-block; }
+
 .landing {
   position: relative;
   font-size: 5em;
-  background: var(--dark);
+  background: linear-gradient(to bottom left, var(--medium), var(--extreme-dark));
   height: 100vh;
   width: 100%;
   outline: 0;

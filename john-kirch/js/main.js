@@ -35,8 +35,33 @@ const showHideCollapsedMenu = (currentScrollPos, mediaQuery) => {
   }
 };
 
+document.querySelector('#navi-toggle').addEventListener('change', () => {
+  hiddenDisplay();
+});
+
+const hiddenDisplay = () => {
+  if (document.querySelector('#navi-toggle').checked) {
+    document.querySelectorAll('.nav__link-2').forEach((element) => {
+      element.classList.add('inline-block-display');
+    });
+    document.querySelectorAll('.nav__link-2').forEach((element) => {
+      element.classList.remove('no-display');
+    });
+  } else {
+    document.querySelectorAll('.nav__link-2').forEach((element) => {
+      element.classList.add('no-display');
+    });
+    document.querySelectorAll('.nav__link-2').forEach((element) => {
+      element.classList.remove('inline-block-display');
+    });
+  }
+};
+
+hiddenDisplay();
+
 function uncheck() {
   document.querySelector('#navi-toggle').checked = false;
+  hiddenDisplay();
 }
 showHideCollapsedMenu(
   window.pageYOffset,
