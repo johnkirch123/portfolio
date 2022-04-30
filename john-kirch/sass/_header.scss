@@ -1,13 +1,14 @@
 .nav {
   background-color: transparent;
   position: relative;
+  max-width: 100%;
   z-index: 10000;
 
   &__logo {
     position: fixed;
     z-index: 10000;
     background: transparent;
-    margin-left: 3%;
+    left: 3%;
     top: 2%;
     font-size: 4em;
     outline: 0;
@@ -77,8 +78,8 @@
     height: 4rem;
     width: 4rem;
     position: fixed;
-    top: 3rem;
-    right: 3rem;
+    top: 2.8rem;
+    right: 2.8rem;
     border-radius: 50%;
     z-index: 102;
     box-shadow: 0 1rem 3rem rgba($color-black, 0.3);
@@ -163,7 +164,7 @@
 
   // ICON
   &__icon {
-    top: 1.5rem;
+    top: 1.2rem;
     position: relative;
 
     &,
@@ -189,7 +190,7 @@
     }
 
     &::after {
-      top: 0.7rem;
+      top: 0.8rem;
     }
   }
 

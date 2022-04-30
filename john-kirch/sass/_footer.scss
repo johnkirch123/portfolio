@@ -18,6 +18,10 @@
     flex-direction: column;
     width: 100%;
     align-items: center;
+
+    @media (max-width: 600px) {
+      align-items: space-between;
+    }
     &--list {
       display: flex;
       list-style: none;
