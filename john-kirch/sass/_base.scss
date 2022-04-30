@@ -25,7 +25,6 @@ body {
 
 html {
   scroll-behavior: smooth;
-  max-width: 150rem;
   margin: 0 auto;
   // This defines what 1rem is
   font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
@@ -52,7 +51,6 @@ html {
 
 .container {
   position: relative;
-  max-width: 150rem;
   width: 100%;
 
   &__color-button {
@@ -62,8 +60,8 @@ html {
     border-radius: 50%;
     border: none;
     position: fixed;
-    margin-top: 85vh;
-    margin-left: 3rem;
+    bottom: 3rem;
+    right: 3rem;
     z-index: 10000;
     transition: transform 0.2s ease-in-out;
 
