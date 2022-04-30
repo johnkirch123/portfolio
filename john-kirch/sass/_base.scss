@@ -9,9 +9,6 @@
 $color-white: #fff;
 $color-black: #000;
 
-body {
-}
-
 :root {
   --duration: 1;
 
@@ -44,8 +41,12 @@ html {
     font-size: 50%; //1 rem = 8px, 8/16 = 50%
   }
 
-  @include respond(big-desktop) {
+  @include respond(desktop) {
     font-size: 125%; //1rem = 12, 12/16
+  }
+
+  @include respond(big-desktop) {
+    font-size: 200%; //1rem = 12, 12/16
   }
 }
 
