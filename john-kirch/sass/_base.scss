@@ -53,6 +53,7 @@ html {
 .container {
   position: relative;
   width: 100%;
+  overflow: hidden;
 
   &__color-button {
     height: 4rem;

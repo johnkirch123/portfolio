@@ -51,7 +51,8 @@ html {
 
 .container {
   position: relative;
-  width: 100%; }
+  width: 100%;
+  overflow: hidden; }
   .container__color-button {
     height: 4rem;
     width: 4rem;
