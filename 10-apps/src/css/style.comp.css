@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4); }
+
+body {
+  background-color: #ddd; }
+
+*::selection {
+  color: #000; }
+
+.app {
+  width: 480px;
+  background: #ddd;
+  box-shadow: -6px -6px 9px white, 6px 6px 9px rgba(0, 0, 0, 0.07), inset -6px -6px 9px rgba(0, 0, 0, 0.07), inset 6px 6px 9px white;
+  margin: 2rem auto;
+  border-radius: 10%;
+  color: #fff;
+  text-align: center;
+  padding: 2rem; }
+
+.search__box {
+  box-shadow: 6px 6px 9px 0 rgba(0, 0, 0, 0.05), -6px -6px 9px white;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  border-radius: 5%;
+  transition: all 0.1s ease-in-out; }
+
+.search__box:active {
+  transform: translateY(2px);
+  box-shadow: inset 6px 6px 9px 0 rgba(0, 0, 0, 0.05), inset -6px -6px 9px white; }
+
+#search-box,
+#search-box:focus,
+#search-box::placeholder {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 1.8rem;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  padding: 0.5rem;
+  caret-color: #ccc; }
+
+.icon__image {
+  height: 18rem;
+  width: 18rem;
+  margin-left: -1rem;
+  margin-top: 2rem;
+  background: #ccc;
+  box-shadow: -4px -4px 15px white, inset 9px 9px 18px rgba(0, 0, 0, 0.07), inset -9px -9px 18px rgba(0, 0, 0, 0.07), 1px 4px 4px white;
+  padding: 3rem;
+  border-radius: 25%; }
+
+.weather {
+  margin: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.weather__temp {
+  font-size: 4.5rem; }
+
+.weather__conditions {
+  margin-left: -1rem;
+  font-size: 1.5rem; }
+
+.weather__box--aux {
+  display: flex;
+  justify-content: space-around;
+  width: 100%; }
+
+.icon__aux {
+  height: 5rem;
+  width: 5rem; }
+
+.weather__temp--aux {
+  font-size: 1.5rem; }
+
+.weather__conditions--aux {
+  font-size: 0.8rem; }
+
+.icon__sun {
+  height: 3rem;
+  width: 3rem; }
+
+.date__time {
+  padding-top: 1rem; }
+
+.location {
+  margin-bottom: 0.5rem; }
+
+.date {
+  margin-bottom: -0.5rem; }
