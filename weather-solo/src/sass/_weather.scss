@@ -6,16 +6,10 @@ $light-grey: #eee;
 $light-medium-grey: #ddd;
 $light-dark-grey: #ccc;
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-  text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4);
-}
-
 body {
   background-color: $light-medium-grey;
+
+  text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4);
 }
 
 *::selection {

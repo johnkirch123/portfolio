@@ -1,5 +1,5 @@
 import React from 'react';
-import { getIcon } from '../icons/icons';
+import { getIcon } from '../../icons/icons';
 
 const IconComponent = ({ desc, dayNight }) => {
   return (
