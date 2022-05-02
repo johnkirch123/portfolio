@@ -96,7 +96,8 @@ body {
   border-radius: 10%;
   color: #fff;
   text-align: center;
-  padding: 2rem; }
+  padding: 2rem;
+  margin-top: 10rem; }
 
 .search__box {
   box-shadow: 6px 6px 9px 0 rgba(0, 0, 0, 0.05), -6px -6px 9px white;
