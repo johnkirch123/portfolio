@@ -1,12 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { DappProvider } from '@elrondnetwork/dapp-core';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <DappProvider
+      environment='devnet'
+      // customNetworkConfig={customNetworkConfig}
+    >
+      <App />
+    </DappProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
