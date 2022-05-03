@@ -3,12 +3,13 @@
 .countdown {
   &__app {
     font-family: 'Poppins', sans-serif;
-    font-size: 2.5em;
+    font-size: 2em;
     color: #fff;
     background: url('https://images.unsplash.com/photo-1633596683562-4a47eb4983c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80')
       no-repeat center;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -20,12 +21,12 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 80%;
-    margin-bottom: 5rem;
+    width: 50%;
+    margin-bottom: 3rem;
 
     & > div {
       & > p {
-        font-size: 3em;
+        font-size: 2em;
         margin-top: 3rem;
       }
       & > span {
@@ -35,7 +36,7 @@
   }
 
   &__header {
-    margin-top: 5rem;
+    margin-top: 8rem;
   }
 
   &__arrow {
@@ -52,10 +53,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 75%;
+    width: 45%;
     &--group {
       display: flex;
-      padding: 3rem 0;
+      padding: 2rem 0;
     }
   }
 }
@@ -71,4 +72,8 @@ input {
   &:focus {
     outline: none;
   }
+}
+
+#countdown__button {
+  margin: 0 auto;
 }

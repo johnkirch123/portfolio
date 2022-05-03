@@ -155,6 +155,7 @@ const CountdownTimerApp = () => {
         <input
           type='submit'
           value='Submit'
+          id='countdown__button'
           className='button__white--outline'
         />
       </form>

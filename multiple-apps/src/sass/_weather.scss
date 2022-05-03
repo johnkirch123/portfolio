@@ -62,15 +62,15 @@ body {
 }
 
 .icon__image {
-  height: 18rem;
-  width: 18rem;
+  height: 12rem;
+  width: 12rem;
   margin-left: -1rem;
   margin-top: 2rem;
   background: $light-dark-grey;
   box-shadow: -4px -4px 15px rgba(255, 255, 255, 1),
     inset 9px 9px 18px rgba(0, 0, 0, 0.07),
     inset -9px -9px 18px rgba(0, 0, 0, 0.07), 1px 4px 4px rgba(255, 255, 255, 1);
-  padding: 3rem;
+  padding: 1rem;
   border-radius: 25%;
 }
 
@@ -97,12 +97,12 @@ body {
 }
 
 .icon__aux {
-  height: 5rem;
-  width: 5rem;
+  height: 3rem;
+  width: 3rem;
 }
 
 .weather__temp--aux {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .weather__conditions--aux {
@@ -110,19 +110,16 @@ body {
 }
 
 .icon__sun {
-  height: 3rem;
-  width: 3rem;
+  height: 2rem;
+  width: 2rem;
 }
 
 .date__time {
-  padding-top: 1rem;
+  padding-top: 0.5rem;
 }
 
 .location {
   margin-bottom: 0.5rem;
-}
-
-.time {
 }
 
 .date {

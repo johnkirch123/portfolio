@@ -70,7 +70,7 @@ const Quiz = ({ quiz }) => {
     }, 4000);
   };
   return (
-    <div className='quiz__main hide'>
+    <div className='quiz__main remove'>
       <div className='quiz__score'>
         <h2 className='quiz__score--right'>Right: {score.right}</h2>
         <h2 className='quiz__score--wrong'>Wrong: {score.wrong}</h2>

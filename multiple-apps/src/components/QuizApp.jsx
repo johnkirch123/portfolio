@@ -44,7 +44,7 @@ const QuizApp = () => {
     fetchQuestions();
     document.querySelector('.quiz__form').classList.add('remove');
     document.querySelector('.quiz__main').classList.add('fadeIn');
-    document.querySelector('.quiz__main').classList.remove('hide');
+    document.querySelector('.quiz__main').classList.remove('remove');
   };
 
   return (
