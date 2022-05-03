@@ -21,8 +21,6 @@ const QuizApp = () => {
       difficulty: { value: difficulty },
       type: { value: type }
     } = e.target;
-    //`https://opentdb.com/api.php?amount=10&category=10&difficulty=medium&type=multiple`;
-    console.log(numOfQuestions);
     let apiString = `${triviaApi}`;
     if (numOfQuestions !== '') apiString += `amount=${numOfQuestions}`;
     else apiString += `amount=10`;
@@ -51,10 +49,12 @@ const QuizApp = () => {
 
   return (
     <div className='quiz'>
-      <div className='quiz__container'>
-        <h1 className='quiz__header'>Quiz App</h1>
-        <QuizForm onFormSubmit={onFormSubmit} />
-        <Quiz quiz={quiz} />
+      <div className='quiz__contain'>
+        <div className='quiz__container'>
+          <h1 className='quiz__header'>Quiz App</h1>
+          <QuizForm onFormSubmit={onFormSubmit} />
+          <Quiz quiz={quiz} />
+        </div>
       </div>
     </div>
   );

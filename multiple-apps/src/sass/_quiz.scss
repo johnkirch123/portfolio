@@ -8,13 +8,20 @@
   background-size: cover;
   height: 100vh;
 
+  &__contain {
+    display: flex;
+    justify-content: center;
+  }
+
   &__container {
-    width: 80%;
-    margin: 0 auto;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    justify-content: center;
     color: white;
     text-shadow: 4px 4px 8px #000;
-    padding-top: 10rem;
+    padding-top: 20rem;
   }
 
   &__header {
@@ -69,8 +76,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0 auto;
-    width: 75%;
     font-size: 1.3em;
     flex-wrap: wrap;
     &--group {
@@ -82,6 +87,15 @@
       &-params {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+      &-param {
+        width: 100%;
+        padding-bottom: 1.5rem;
+        & > select {
+          font-size: 1em;
+        }
 
         & > label {
           margin: 0 0.5rem;

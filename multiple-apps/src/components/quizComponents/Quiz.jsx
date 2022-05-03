@@ -42,6 +42,9 @@ const Quiz = ({ quiz }) => {
         document.querySelector('.quiz__main').classList.add('hide');
         document.querySelector('.quiz__form').classList.remove('remove');
         document.querySelector('.quiz__form').classList.add('show');
+        alert(
+          `You correctly guessed ${score.right} and incorrectly guessed ${score.wrong}`
+        );
       }, 5000);
     }
     const radios = document.getElementsByName('answers');
@@ -91,7 +94,7 @@ const Quiz = ({ quiz }) => {
           <div className='quiz__body--question'></div>
           <div className='quiz__body--answers'>
             {answers?.map((answer) => (
-              <div className='quiz__body--answers-button-box'>
+              <div key={answer} className='quiz__body--answers-button-box'>
                 <input type='radio' name='answers' value={answer} />
                 {answer}
               </div>

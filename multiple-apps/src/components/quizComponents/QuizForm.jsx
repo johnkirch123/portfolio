@@ -20,24 +20,30 @@ const QuizForm = ({ onFormSubmit }) => {
           />
         </div>
         <div className='quiz__form--group-params'>
-          <label htmlFor='category'>Category: </label>
-          <select name='category' id='category'>
-            {triviaCategories.map((category) => (
-              <option key={category}>{category}</option>
-            ))}
-          </select>
-          <label htmlFor='difficulty'>Difficulty: </label>
-          <select name='difficulty' id='difficulty'>
-            {triviaDifficulties.map((category) => (
-              <option key={category}>{category}</option>
-            ))}
-          </select>
-          <label htmlFor='type'>Type: </label>
-          <select name='type' id='type'>
-            {triviaTypes.map((category) => (
-              <option key={category}>{category}</option>
-            ))}
-          </select>
+          <div className='quiz__form--group-param'>
+            <label htmlFor='category'>Category: </label>
+            <select name='category' id='category'>
+              {triviaCategories.map((category) => (
+                <option key={category}>{category}</option>
+              ))}
+            </select>
+          </div>
+          <div className='quiz__form--group-param'>
+            <label htmlFor='difficulty'>Difficulty: </label>
+            <select name='difficulty' id='difficulty'>
+              {triviaDifficulties.map((category) => (
+                <option key={category}>{category}</option>
+              ))}
+            </select>
+          </div>
+          <div className='quiz__form--group-param'>
+            <label htmlFor='type'>Type: </label>
+            <select name='type' id='type'>
+              {triviaTypes.map((category) => (
+                <option key={category}>{category}</option>
+              ))}
+            </select>
+          </div>
         </div>
       </div>
       <input
