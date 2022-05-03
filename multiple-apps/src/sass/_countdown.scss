@@ -19,6 +19,7 @@
   &__container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 80%;
     margin-bottom: 5rem;
 
@@ -70,22 +71,4 @@ input {
   &:focus {
     outline: none;
   }
-}
-
-.show {
-  animation: show 0.3s ease-in;
-  opacity: 1;
-}
-
-.hide {
-  animation: hide 0.3s ease-out;
-  opacity: 0;
-}
-
-.rotateDown {
-  animation: rotateDown 0.5s forwards;
-}
-
-.rotateUp {
-  animation: rotateUp 0.5s forwards;
 }

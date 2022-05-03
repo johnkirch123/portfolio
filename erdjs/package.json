@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@elrondnetwork/dapp-core": "^1.1.12",
+    "@elrondnetwork/dapp-core": "^1.1.13",
     "@elrondnetwork/erdjs": "^10.1.2",
     "@elrondnetwork/erdjs-network-providers": "^0.1.5",
     "crypto-browserify": "^3.12.0",

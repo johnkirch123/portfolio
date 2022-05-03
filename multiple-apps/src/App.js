@@ -6,6 +6,7 @@ import WeatherApp from './components/WeatherApp';
 import CountdownTimerApp from './components/CountdownTimerApp';
 
 import './css/style.css';
+import QuizApp from './components/QuizApp';
 const App = () => {
   return (
     <div>
@@ -14,6 +15,7 @@ const App = () => {
         <Route exact path='/' element={<Home />} />
         <Route path='/weather' element={<WeatherApp />} />
         <Route path='/countdown_timer' element={<CountdownTimerApp />} />
+        <Route path='/quiz' element={<QuizApp />} />
       </Routes>
     </div>
   );

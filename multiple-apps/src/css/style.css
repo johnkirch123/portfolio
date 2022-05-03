@@ -11,6 +11,7 @@
   top: 5%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 100%;
   margin: 0 auto;
   text-align: center; }
 
@@ -30,6 +31,7 @@
 .countdown__container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 80%;
   margin-bottom: 5rem; }
   .countdown__container > div > p {
@@ -67,19 +69,76 @@ input {
   input:focus {
     outline: none; }
 
-.show {
-  animation: show 0.3s ease-in;
-  opacity: 1; }
+.quiz {
+  background-image: linear-gradient(to bottom right, rgba(11, 11, 85, 0.8), rgba(70, 11, 11, 0.8)), url("../img/question-mark.jpg");
+  background-size: cover;
+  height: 100vh; }
+  .quiz__container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    text-shadow: 4px 4px 8px #000;
+    padding-top: 10rem; }
+  .quiz__header {
+    font-size: 3rem;
+    margin-bottom: 3rem; }
+  .quiz__score {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 1.8rem; }
+    .quiz__score--right {
+      color: #1fdb1f; }
+    .quiz__score--wrong {
+      color: red; }
+  .quiz__info {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem; }
+  .quiz__body--question {
+    font-size: 2.7em;
+    margin-bottom: 2rem; }
+  .quiz__body--answers {
+    margin-left: 45%; }
+    .quiz__body--answers-button-box {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      margin-bottom: 1rem;
+      font-size: 1.5rem; }
+      .quiz__body--answers-button-box > input {
+        width: 2rem; }
+  .quiz__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    width: 75%;
+    font-size: 1.3em;
+    flex-wrap: wrap; }
+    .quiz__form--group {
+      display: flex;
+      flex-direction: column;
+      font-size: 1.5em;
+      padding: 3rem 0; }
+      .quiz__form--group-params {
+        display: flex;
+        justify-content: space-between; }
+        .quiz__form--group-params > label {
+          margin: 0 0.5rem; }
 
-.hide {
-  animation: hide 0.3s ease-out;
-  opacity: 0; }
+.answer {
+  font-size: 2em;
+  padding: 3rem; }
 
-.rotateDown {
-  animation: rotateDown 0.5s forwards; }
-
-.rotateUp {
-  animation: rotateUp 0.5s forwards; }
+#numOfQuestions {
+  text-align: center;
+  width: 50%;
+  margin-bottom: 3rem; }
+  #numOfQuestions::placeholder {
+    color: #ccc; }
 
 body {
   background-color: #ddd;
@@ -184,6 +243,8 @@ body {
     display: inline-block;
     transition: all 0.2s ease-in-out;
     font-size: 2.5rem;
+    width: 50%;
+    margin-top: 3rem;
     border: 3px white solid;
     cursor: pointer; }
   .button__white--outline:hover {
@@ -231,3 +292,29 @@ body {
     opacity: 1; }
   100% {
     opacity: 0; } }
+
+.center {
+  margin: 0 auto; }
+
+.fadeOut {
+  animation: hide 1s forwards; }
+
+.fadeIn {
+  animation: show 1s forwards; }
+
+.show {
+  animation: show 0.3s ease-in;
+  opacity: 1; }
+
+.hide {
+  animation: hide 0.3s ease-out;
+  opacity: 0; }
+
+.rotateDown {
+  animation: rotateDown 0.5s forwards; }
+
+.rotateUp {
+  animation: rotateUp 0.5s forwards; }
+
+.remove {
+  display: none; }

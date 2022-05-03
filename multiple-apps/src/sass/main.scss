@@ -3,8 +3,12 @@
 @import 'header';
 
 @import 'countdown';
+@import 'quiz';
 @import 'weather';
 
 // Components
 @import 'components/buttons';
 @import 'components/animations';
+
+// Utils
+@import 'utils/utils'

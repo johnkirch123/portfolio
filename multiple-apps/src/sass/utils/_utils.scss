@@ -1,0 +1,33 @@
+.center {
+  margin: 0 auto;
+}
+
+.fadeOut {
+  animation: hide 1s forwards;
+}
+
+.fadeIn {
+  animation: show 1s forwards;
+}
+
+.show {
+  animation: show 0.3s ease-in;
+  opacity: 1;
+}
+
+.hide {
+  animation: hide 0.3s ease-out;
+  opacity: 0;
+}
+
+.rotateDown {
+  animation: rotateDown 0.5s forwards;
+}
+
+.rotateUp {
+  animation: rotateUp 0.5s forwards;
+}
+
+.remove {
+  display: none;
+}

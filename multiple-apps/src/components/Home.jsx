@@ -9,6 +9,9 @@ const Home = () => {
       <Link to='/countdown_timer' className='home__link'>
         Countdown Timer App
       </Link>
+      <Link to='/quiz' className='home__link'>
+        Quiz App
+      </Link>
     </div>
   );
 };
