@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
-import keys from '../config/default.json';
-import IconComponent from './weatherComponents/IconComponent';
-import WeatherComponent from './weatherComponents/WeatherComponent';
-import AuxillaryWeatherComponent from './weatherComponents/AuxillaryWeatherComponent';
-import SearchComponent from './weatherComponents/SearchComponent';
-import DateTimeComponent from './weatherComponents/DateTimeComponent';
+import keys from '../../config/default.json';
+import IconComponent from '../weatherComponents/IconComponent';
+import WeatherComponent from '../weatherComponents/WeatherComponent';
+import AuxillaryWeatherComponent from '../weatherComponents/AuxillaryWeatherComponent';
+import SearchComponent from '../weatherComponents/SearchComponent';
+import DateTimeComponent from '../weatherComponents/DateTimeComponent';
 
 function App() {
   const [dayNight, setDayNight] = useState('day');

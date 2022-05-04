@@ -2,11 +2,11 @@ import { Routes, Route } from 'react-router-dom';
 
 import Header from './components/Header';
 import Home from './components/Home';
-import WeatherApp from './components/WeatherApp';
-import CountdownTimerApp from './components/CountdownTimerApp';
+import WeatherApp from './components/mainAppComponents/WeatherApp';
+import CountdownTimerApp from './components/mainAppComponents/CountdownTimerApp';
+import QuizApp from './components/mainAppComponents/QuizApp';
 
 import './css/style.css';
-import QuizApp from './components/QuizApp';
 const App = () => {
   return (
     <div>

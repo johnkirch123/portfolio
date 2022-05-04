@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import arrow from '../img/down-arrow.png';
+import arrow from '../../img/down-arrow.png';
 
 const CountdownTimerApp = () => {
   const [intervalId, setIntervalId] = useState(0);

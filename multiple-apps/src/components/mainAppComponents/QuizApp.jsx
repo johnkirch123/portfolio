@@ -4,9 +4,9 @@ import {
   triviaCategories,
   triviaDifficulties,
   triviaTypes
-} from '../config/trivia';
-import Quiz from './quizComponents/Quiz';
-import QuizForm from './quizComponents/QuizForm';
+} from '../../config/trivia';
+import Quiz from '../quizComponents/Quiz';
+import QuizForm from '../quizComponents/QuizForm';
 
 const QuizApp = () => {
   const [quiz, setQuiz] = useState([]);
