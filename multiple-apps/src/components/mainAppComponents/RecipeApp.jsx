@@ -10,7 +10,6 @@ const RecipeApp = () => {
   const [show, setShow] = useState(false);
 
   const handleSearch = async (searchTerm) => {
-    console.log(`in handleSearch: ${searchTerm}`);
     let searchString = spoonacularApi + `?query=${searchTerm}&apiKey=${apiKey}`;
     let res = await fetch(searchString);
     let result = await res.json();

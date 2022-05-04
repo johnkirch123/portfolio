@@ -79,11 +79,13 @@
       padding: 2rem 10rem;
       background-color: rgba(255, 255, 255, 0.1);
       border: 4px solid white;
+      text-align: center;
     }
 
     &--image {
       width: 60%;
       padding: 3rem;
+      min-width: 40rem;
     }
 
     &--info-box {
@@ -91,9 +93,11 @@
       justify-content: start;
       border: 3px solid white;
       background-color: rgba(255, 255, 255, 0.1);
+      width: 100%;
+      min-width: 40rem;
       & > p {
         font-size: 1.5em;
-        padding: 1rem 4rem;
+        padding: 1rem 4%;
         width: 33%;
         margin: auto;
       }

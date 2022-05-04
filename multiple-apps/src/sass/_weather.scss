@@ -28,6 +28,12 @@ body {
   text-align: center;
   padding: 2rem;
   margin-top: 10rem;
+  @media (max-width: 600px) {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding-top: 10rem;
+  }
 }
 
 .search__box {
@@ -79,21 +85,20 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
 
-.weather__temp {
-  font-size: 4.5rem;
-}
+  &__temp {
+    font-size: 4.5rem;
+  }
 
-.weather__conditions {
-  margin-left: -1rem;
-  font-size: 1.5rem;
-}
-
-.weather__box--aux {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
+  &__conditions {
+    margin-left: -1rem;
+    font-size: 1.5rem;
+  }
+  &__box--aux {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
 }
 
 .icon__aux {

@@ -15,6 +15,9 @@ const RecipeSearch = ({ handleSearch }) => {
         id='site-search'
         name='q'
         onChange={handleChange}
+        onKeyDown={(e) => {
+          if (e.key === 'Enter') handleSearch(searchTerm);
+        }}
         value={searchTerm}
       />
 
