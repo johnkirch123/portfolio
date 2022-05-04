@@ -10,7 +10,7 @@ const SunStateComponent = ({ sunTime, icon, dateTime, timezoneOffset }) => {
   const sunTimeArray = sunTimeString.split(' ');
 
   return (
-    <div>
+    <div className='weather__sun-state'>
       <h3>{icon === 'day' ? 'Sunrise' : 'Sunset'}</h3>
       <img
         className='icon__sun'
