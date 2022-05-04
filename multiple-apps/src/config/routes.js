@@ -1,4 +1,4 @@
-export const routes = ['weather', 'countdown_timer', 'quiz'];
+export const routes = ['weather', 'countdown_timer', 'quiz', 'recipe'];
 export const apps = [
   {
     name: 'Weather App',
@@ -14,5 +14,10 @@ export const apps = [
     name: 'Quiz App',
     route: '/quiz',
     image: '../img/quiz.png'
+  },
+  {
+    name: 'Recipe App',
+    route: '/recipe',
+    image: '../img/countdown-timer.png'
   }
 ];

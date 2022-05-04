@@ -3,9 +3,10 @@ import { apps } from '../config/routes';
 import weatherImage from '../img/weather-app.png';
 import countdownImage from '../img/countdown-timer.png';
 import quizImage from '../img/quiz.png';
+import recipeImage from '../img/food.jfif';
 
 const Home = () => {
-  const images = [weatherImage, countdownImage, quizImage];
+  const images = [weatherImage, countdownImage, quizImage, recipeImage];
   return (
     <div className='home'>
       {apps.map((app, i) => (

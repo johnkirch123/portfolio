@@ -1,10 +1,5 @@
 import { useState, useEffect } from 'react';
-import {
-  triviaApi,
-  triviaCategories,
-  triviaDifficulties,
-  triviaTypes
-} from '../../config/trivia';
+import { triviaApi, triviaCategories } from '../../config/trivia';
 import Quiz from '../quizComponents/Quiz';
 import QuizForm from '../quizComponents/QuizForm';
 

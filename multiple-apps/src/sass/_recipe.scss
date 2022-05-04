@@ -1,0 +1,131 @@
+.recipe {
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url('../img/food.jfif');
+  background-size: cover;
+  min-height: 100vh;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+
+  &__search {
+    width: 65%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10rem;
+  }
+
+  &__container {
+    width: 125%;
+  }
+
+  &__area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5rem;
+  }
+
+  &__card {
+    width: 20%;
+    min-width: 20rem;
+    margin: 2.2rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    background-color: #333;
+    box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.3);
+    border: 2px solid #222;
+
+    &--title {
+      &-box {
+        min-height: 4rem;
+        background-color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+      }
+    }
+
+    &--image {
+      width: 100%;
+      background-size: cover;
+    }
+  }
+
+  &__details {
+    padding: 5rem;
+    width: 80%;
+    margin: 5rem auto;
+    border: 3px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 5px 8px rgba(0, 0, 0, 0.2);
+
+    &--name {
+      font-size: 4em;
+      padding: 2rem 10rem;
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 4px solid white;
+    }
+
+    &--image {
+      width: 60%;
+      padding: 3rem;
+    }
+
+    &--info-box {
+      display: flex;
+      justify-content: start;
+      border: 3px solid white;
+      background-color: rgba(255, 255, 255, 0.1);
+      & > p {
+        font-size: 1.5em;
+        padding: 1rem 4rem;
+        width: 33%;
+        margin: auto;
+      }
+    }
+    &--ingredients {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      margin-left: 2rem;
+      width: 100%;
+      &-header {
+        font-size: 3em;
+        align-self: center;
+        padding: 2rem;
+        text-decoration: underline;
+      }
+      &-item {
+        display: flex;
+        width: 100%;
+        padding: 0.3rem 0;
+        font-size: 1.5em;
+      }
+      &-image {
+        border: 1px solid black;
+        width: 5rem;
+        height: 5rem;
+        background-color: white;
+        margin-right: 1rem;
+      }
+      &-measurements {
+        margin: auto 0;
+      }
+    }
+  }
+}

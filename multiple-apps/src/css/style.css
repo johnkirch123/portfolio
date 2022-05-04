@@ -182,6 +182,102 @@ input {
   #numOfQuestions::placeholder {
     color: #ccc; }
 
+.recipe {
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url("../img/food.jfif");
+  background-size: cover;
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white; }
+  .recipe__search {
+    width: 65%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10rem; }
+  .recipe__container {
+    width: 125%; }
+  .recipe__area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5rem; }
+  .recipe__card {
+    width: 20%;
+    min-width: 20rem;
+    margin: 2.2rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    background-color: #333;
+    box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.3);
+    border: 2px solid #222; }
+    .recipe__card--title-box {
+      min-height: 4rem;
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 1rem; }
+    .recipe__card--image {
+      width: 100%;
+      background-size: cover; }
+  .recipe__details {
+    padding: 5rem;
+    width: 80%;
+    margin: 5rem auto;
+    border: 3px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 5px 8px rgba(0, 0, 0, 0.2); }
+    .recipe__details--name {
+      font-size: 4em;
+      padding: 2rem 10rem;
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 4px solid white; }
+    .recipe__details--image {
+      width: 60%;
+      padding: 3rem; }
+    .recipe__details--info-box {
+      display: flex;
+      justify-content: start;
+      border: 3px solid white;
+      background-color: rgba(255, 255, 255, 0.1); }
+      .recipe__details--info-box > p {
+        font-size: 1.5em;
+        padding: 1rem 4rem;
+        width: 33%;
+        margin: auto; }
+    .recipe__details--ingredients {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      margin-left: 2rem;
+      width: 100%; }
+      .recipe__details--ingredients-header {
+        font-size: 3em;
+        align-self: center;
+        padding: 2rem;
+        text-decoration: underline; }
+      .recipe__details--ingredients-item {
+        display: flex;
+        width: 100%;
+        padding: 0.3rem 0;
+        font-size: 1.5em; }
+      .recipe__details--ingredients-image {
+        border: 1px solid black;
+        width: 5rem;
+        height: 5rem;
+        background-color: white;
+        margin-right: 1rem; }
+      .recipe__details--ingredients-measurements {
+        margin: auto 0; }
+
 body {
   background-color: #ddd;
   text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4); }
@@ -278,7 +374,8 @@ body {
   margin-bottom: -0.5rem; }
 
 .button__white--outline {
-  color: white; }
+  color: white;
+  background-color: transparent; }
   .button__white--outline, .button__white--outline:link, .button__white--outline:visited {
     text-decoration: none;
     padding: 0.5rem 2rem;
