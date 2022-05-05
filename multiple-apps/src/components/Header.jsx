@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <header className='header'>
       <Link to='/' className='button__white--outline'>
-        10 Fun Apps
+        5 Fun Apps
       </Link>
     </header>
   );

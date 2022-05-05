@@ -9,7 +9,7 @@ const options = {
     'tiers[0]': '1',
     orderBy: 'marketCap',
     orderDirection: 'desc',
-    limit: '50',
+    limit: '100',
     offset: '0'
   },
   headers: {
@@ -18,11 +18,13 @@ const options = {
   }
 };
 
-axios
-  .request(options)
-  .then(function (response) {
-    console.log(response.data);
-  })
-  .catch(function (error) {
-    console.error(error);
-  });
+export const getCrypto = async () => {
+  return await axios
+    .request(options)
+    .then(function (response) {
+      return response.data;
+    })
+    .catch(function (error) {
+      console.error(error);
+    });
+};

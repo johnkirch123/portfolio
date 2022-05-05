@@ -1,6 +1,10 @@
 .crypto {
+  font-size: 2em;
+  color: #fff;
+  background-color: #000;
   min-height: 100vh;
   height: 100%;
+  text-align: center;
   padding-top: 8rem;
 
   &__container {
@@ -8,4 +12,85 @@
     margin: 0 auto;
     text-align: center;
   }
+
+  &__search {
+    background-image: linear-gradient(
+        to bottom right,
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url('../img/bitcoin.jpg');
+    box-shadow: inset 0 0 7px 7px rgba(0, 0, 0, 0.7);
+    background-position: center;
+    background-size: cover;
+    height: 25rem;
+    padding: 5rem;
+  }
+
+  &__market {
+    font-size: 0.45em;
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+
+  &__card {
+    height: 3rem;
+    width: 100%;
+    font-size: 0.35em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 0 2rem;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 0 15px 10px rgba(255, 255, 255, 0.15);
+    background-color: #222;
+
+    &--rank {
+      margin-right: 0.5rem;
+    }
+
+    &--image {
+      height: 2rem;
+      width: 2rem;
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    &--data {
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 2rem;
+    }
+
+    &--aux-data {
+      &-box {
+        font-size: 0.7em;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 40%;
+      }
+    }
+  }
+}
+
+.red {
+  color: rgb(190, 37, 37);
+}
+
+.green {
+  color: rgb(22, 214, 96);
+}
+
+#crypto__card--aux-data-coinranking-url {
+  font-size: 1em;
+  max-width: 5rem;
+  padding: 0.2rem 0.5rem;
+  margin: 0;
 }
