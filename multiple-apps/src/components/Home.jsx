@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { apps } from '../config/routes';
 import weatherImage from '../img/weather-app.png';
 import countdownImage from '../img/countdown-timer.png';
+import cryptoImage from '../img/crypto.png';
 import quizImage from '../img/quiz.png';
 import recipeImage from '../img/food.jfif';
 
@@ -11,7 +12,7 @@ const Home = () => {
     countdownImage,
     quizImage,
     recipeImage,
-    countdownImage
+    cryptoImage
   ];
   return (
     <div className='home'>

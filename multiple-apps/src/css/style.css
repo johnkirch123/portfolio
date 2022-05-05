@@ -28,7 +28,7 @@
   min-height: 100vh;
   height: 100%;
   padding: 10rem 8%;
-  background-color: #777; }
+  background-color: #222; }
 
 .card {
   width: 20rem;
@@ -42,7 +42,7 @@
     font-size: 2rem;
     text-align: center;
     background-color: #333;
-    margin: 2rem auto;
+    margin: 2rem;
     max-height: 30rem; }
     .card__link:hover {
       cursor: pointer; }

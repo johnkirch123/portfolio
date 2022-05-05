@@ -3,20 +3,20 @@ const CryptoList = ({ stats, filteredCrypto }) => {
     <div className='crypto__area'>
       <div className='crypto__market'>
         <h3 className='crypto__market-total-coins'>
-          Total Coins: {stats.totalCoins}
+          Total Coins: {stats?.totalCoins}
         </h3>
         <h3 className='crypto__market-total-markets'>
-          Total Markets: {stats.totalMarkets}
+          Total Markets: {stats?.totalMarkets}
         </h3>
         <h3 className='crypto__market-total-exchanges'>
-          Total Exchanges: {stats.totalExchanges}
+          Total Exchanges: {stats?.totalExchanges}
         </h3>
         <h3 className='crypto__market-total-market-cap'>
-          Total Market Cap: {stats.totalMarketCap}
+          Total Market Cap: {stats?.totalMarketCap}
         </h3>
 
         <h3 className='crypto__market-total-volume'>
-          Total 24hr Volume: {stats.total24hVolume}
+          Total 24hr Volume: {stats?.total24hVolume}
         </h3>
       </div>
       {filteredCrypto?.map(

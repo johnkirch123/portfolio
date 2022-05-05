@@ -23,6 +23,6 @@ export const apps = [
   {
     name: 'Crypto App',
     route: '/crypto',
-    image: '../img/countdown-timer.png'
+    image: '../img/crypto.png'
   }
 ];
