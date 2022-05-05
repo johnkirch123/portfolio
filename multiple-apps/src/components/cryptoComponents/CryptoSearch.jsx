@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const RecipeSearch = ({ handleSearch }) => {
+const CryptoSearch = ({ handleSearch }) => {
   const [searchTerm, setSearchTerm] = useState('');
 
   const handleChange = (e) => {
@@ -10,7 +10,7 @@ const RecipeSearch = ({ handleSearch }) => {
   return (
     <div className='search'>
       <label htmlFor='site-search' className='search__title'>
-        Search Recipes:
+        Search Crypto:
       </label>
       <input
         type='search'
@@ -36,4 +36,4 @@ const RecipeSearch = ({ handleSearch }) => {
   );
 };
 
-export default RecipeSearch;
+export default CryptoSearch;

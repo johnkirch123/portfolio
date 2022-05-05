@@ -34,7 +34,7 @@
   width: 20rem;
   border: 2px solid #333; }
   .card__img {
-    height: 100%;
+    height: 15rem;
     width: 100%; }
   .card__link {
     text-decoration: none;
@@ -106,6 +106,15 @@ input {
 
 #countdown__button {
   margin: 0 auto; }
+
+.crypto {
+  min-height: 100vh;
+  height: 100%;
+  padding-top: 8rem; }
+  .crypto__container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center; }
 
 .quiz {
   background-image: linear-gradient(to bottom right, rgba(11, 11, 85, 0.8), rgba(70, 11, 11, 0.8)), url("../img/question-mark.jpg");
@@ -197,11 +206,6 @@ input {
   justify-content: center;
   align-items: center;
   color: white; }
-  .recipe__search {
-    width: 65%;
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 10rem; }
   .recipe__container {
     width: 125%; }
   .recipe__area {
@@ -390,28 +394,6 @@ body {
 .date {
   margin-bottom: -0.5rem; }
 
-.button__white--outline {
-  color: white;
-  background-color: transparent; }
-  .button__white--outline, .button__white--outline:link, .button__white--outline:visited {
-    text-decoration: none;
-    padding: 0.5rem 2rem;
-    display: inline-block;
-    transition: all 0.2s ease-in-out;
-    font-size: 2.5rem;
-    margin-top: 3rem;
-    width: 50%;
-    min-width: min-content;
-    border: 3px white solid;
-    cursor: pointer; }
-  .button__white--outline:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.3); }
-  .button__white--outline:active, .button__white--outline:focus {
-    outline: none;
-    transform: translateY(-1px);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
-
 @keyframes downwardMovement {
   0%,
   100% {
@@ -449,6 +431,37 @@ body {
     opacity: 1; }
   100% {
     opacity: 0; } }
+
+.button__white--outline {
+  color: white;
+  background-color: transparent; }
+  .button__white--outline, .button__white--outline:link, .button__white--outline:visited {
+    text-decoration: none;
+    padding: 0.5rem 2rem;
+    display: inline-block;
+    transition: all 0.2s ease-in-out;
+    font-size: 2.5rem;
+    margin-top: 3rem;
+    width: 50%;
+    min-width: min-content;
+    border: 3px white solid;
+    cursor: pointer; }
+  .button__white--outline:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.3); }
+  .button__white--outline:active, .button__white--outline:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+.search {
+  width: 65%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 5rem; }
+  .search__title {
+    font-size: 2em;
+    color: white; }
 
 .center {
   margin: 0 auto; }

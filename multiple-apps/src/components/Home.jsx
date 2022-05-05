@@ -6,7 +6,13 @@ import quizImage from '../img/quiz.png';
 import recipeImage from '../img/food.jfif';
 
 const Home = () => {
-  const images = [weatherImage, countdownImage, quizImage, recipeImage];
+  const images = [
+    weatherImage,
+    countdownImage,
+    quizImage,
+    recipeImage,
+    countdownImage
+  ];
   return (
     <div className='home'>
       {apps.map((app, i) => (

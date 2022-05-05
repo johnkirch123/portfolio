@@ -1,0 +1,11 @@
+.crypto {
+  min-height: 100vh;
+  height: 100%;
+  padding-top: 8rem;
+
+  &__container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}

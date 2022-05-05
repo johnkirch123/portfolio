@@ -19,5 +19,10 @@ export const apps = [
     name: 'Recipe App',
     route: '/recipe',
     image: '../img/countdown-timer.png'
+  },
+  {
+    name: 'Crypto App',
+    route: '/crypto',
+    image: '../img/countdown-timer.png'
   }
 ];
