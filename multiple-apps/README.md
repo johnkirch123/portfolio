@@ -1,5 +1,7 @@
 # 5 Fun Apps Project
 
+![Multi Apps Image](https://johnwkirch.com/img/multi-apps.png)
+
 This is a small project, not following tutorials of 5 small apps that connect to API's and some can store user data in local storage in your browser. This is part of the [Multi Apps](http://peaceful-temple-95021.herokuapp.com/) project for my portfolio.
 
 ## Weather App
