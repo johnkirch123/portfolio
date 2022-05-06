@@ -1,70 +1,23 @@
-# Getting Started with Create React App
+#5 Fun Apps Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a small project, not following tutorials of 5 small apps that connect to API's and some can store user data in local storage in your browser. This is part of the [Multi Apps](http://peaceful-temple-95021.herokuapp.com/) project for my portfolio.
 
-## Available Scripts
+##Weather App
 
-In the project directory, you can run:
+The [Weather App](http://peaceful-temple-95021.herokuapp.com/weather) uses the [Open Weather](https://openweathermap.org/api) API to retrieve data. Since it uses the 'One Call API', I also use the [Position Stack](https://openweathermap.org/api) API to get the requested coordinates to use the 'One Call API'.
 
-### `npm start`
+The last retrieved data is stored in local storage and will be retrieved upon reopnening the application. Further work will be added to this project, such as a dark/light mode and displaying detailed information about the days when it is clicked on.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+##Countdown Timer App
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The [Countdown Timer App](http://peaceful-temple-95021.herokuapp.com/countdown_timer) does not use any APIs, but it does have a dropdown form to input any day that you would like to countdown to. It stores this in local storage and will be remembered when re-opened.
 
-### `npm test`
+##Quiz App
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The [Quiz App](http://peaceful-temple-95021.herokuapp.com/quiz) uses the [Open Trivia](https://opentdb.com/api_config.php) API and allows the user to select the number of questions, choose from the various categories, set the difficulty and choose the type of questions. This App will keep score of right and wrong answers selected and will display the correct answer for 4 seconds at the end of each question.
 
-### `npm run build`
+##Recipe App
+The [Recipe App](http://peaceful-temple-95021.herokuapp.com/recipe) uses the [Spoonacular](https://spoonacular.com/food-api) API and returns the top 10 results for any type of search. You can click on any of the cards to be shown the details page and the recipe's ingredients.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+##Crypto App
+The [Crypto App](http://peaceful-temple-95021.herokuapp.com/crypto) uses the [Coinranking](https://rapidapi.com/Coinranking/api/coinranking1) API from Rapid API. Rapid API is a great location to find all types of fun APIs to work with. This application displays the top 100 Crypto Coins by market cap and allows the user to filter them and and click on the coin to get the details from coinrankings page.
