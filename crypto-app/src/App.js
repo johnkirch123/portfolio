@@ -46,6 +46,13 @@ const App = () => {
             <Link to='/'>Home</Link>
             <Link to='/exchanges'>Exchanges</Link>
             <Link to='/news'>News</Link>
+
+            <a
+              href='https://www.youtube.com/watch?v=GDa8kZLNhJ4&t=8920s'
+              target='_blank'
+            >
+              'Website built from Javascript Mastery Tutorial'
+            </a>
           </Space>
         </div>
       </div>
