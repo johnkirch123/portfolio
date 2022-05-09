@@ -181,8 +181,26 @@
 
 // ******************************************************************************************************************************************************* //
 
-const removeChar = (str) => {
-  return str.split("").slice(1, -1).join("");
+// const removeChar = (str) => {
+//   return str.split("").slice(1, -1).join("");
+// };
+
+// console.log(removeChar("hello"));
+
+// ******************************************************************************************************************************************************* //
+
+const trib = (arr, n) => {
+  if (n === 0) return [];
+  if (n < 3) return arr.slice(0, n);
+
+  const helper = (arr) => {
+    if (n === arr.length) return arr[arr.length - 1];
+    arr.push(arr[arr.length - 3] + arr[arr.length - 2] + arr[arr.length - 1]);
+    helper(arr);
+  };
+
+  helper(arr);
+  return arr;
 };
 
-console.log(removeChar("hello"));
+console.log(trib([3, 2, 1], 2));
