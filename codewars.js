@@ -189,18 +189,44 @@
 
 // ******************************************************************************************************************************************************* //
 
-const trib = (arr, n) => {
-  if (n === 0) return [];
-  if (n < 3) return arr.slice(0, n);
+// const trib = (arr, n) => {
+//   if (n === 0) return [];
+//   if (n < 3) return arr.slice(0, n);
 
-  const helper = (arr) => {
-    if (n === arr.length) return arr[arr.length - 1];
-    arr.push(arr[arr.length - 3] + arr[arr.length - 2] + arr[arr.length - 1]);
-    helper(arr);
-  };
+//   const helper = (arr) => {
+//     if (n === arr.length) return arr[arr.length - 1];
+//     arr.push(arr[arr.length - 3] + arr[arr.length - 2] + arr[arr.length - 1]);
+//     helper(arr);
+//   };
 
-  helper(arr);
-  return arr;
-};
+//   helper(arr);
+//   return arr;
+// };
 
-console.log(trib([3, 2, 1], 2));
+// console.log(trib([3, 2, 1], 2));
+
+// ******************************************************************************************************************************************************* //
+
+// POTATOES PERCENT OF WATER REMOVED AND WEIGHT
+// function potatoes(p0, w0, p1) {
+//   // w0 = p0/100 + x/100
+//   // 100 = p0 + x - w0
+//   // 100 = p1 + x - w1
+//   // p0 - w0 = p1 - w1
+//   return Math.floor((w0 * (100 - p0)) / (100 - p1));
+// }
+
+// console.log(potatoes(99, 100, 98));
+// console.log(potatoes(82, 127, 80));
+// console.log(potatoes(93, 129, 100));
+
+// ******************************************************************************************************************************************************* //
+
+function dontGiveMeFive(start, end) {
+  return Array.from({ length: end - start + 1 }, (_, i) => start + i).filter(
+    (n) => n.toString().indexOf("5") === -1
+  ).length;
+}
+
+console.log(dontGiveMeFive(1, 9));
+console.log(dontGiveMeFive(4, 17));
