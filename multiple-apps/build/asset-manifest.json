@@ -1,7 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.80e3455f.css",
-    "main.js": "/static/js/main.0a0e5027.js",
+    "main.css": "/static/css/main.d289276e.css",
+    "main.js": "/static/js/main.d0c089af.js",
+    "static/media/countdown-timer.png": "/static/media/countdown-timer.5c1f02d56ef82d1716ba.png",
+    "static/media/quiz.png": "/static/media/quiz.4f18bee872273c99b395.png",
+    "static/media/crypto.png": "/static/media/crypto.a9fb24149235db1a9477.png",
+    "static/media/food.jfif": "/static/media/food.4de00e0ceff3e7c76940.jfif",
+    "static/media/question-mark.jpg": "/static/media/question-mark.69a27f26ace0c714fcc4.jpg",
+    "static/media/weather-app.png": "/static/media/weather-app.fccda2885be4e22a8bb5.png",
+    "static/media/todos.PNG": "/static/media/todos.7a51daa554c5babb875f.PNG",
+    "static/media/bitcoin.jpg": "/static/media/bitcoin.2a9dab5dcb5e647db795.jpg",
     "static/media/day-snowy.png": "/static/media/day-snowy.255046ecfe3024ac2aab.png",
     "static/media/night-snowy.png": "/static/media/night-snowy.fee4b83c41f07d2474df.png",
     "static/media/day-rain-lightening.png": "/static/media/day-rain-lightening.46097023e9cf93cc3db5.png",
@@ -25,15 +33,16 @@
     "static/media/rain-medium.png": "/static/media/rain-medium.6a80698f8ab766a84fc3.png",
     "static/media/rain-heavy.png": "/static/media/rain-heavy.98a8d3fd5212f009dac6.png",
     "static/media/cloudy.png": "/static/media/cloudy.d5501ab2ab9be56d9e8c.png",
+    "static/media/down-arrow.png": "/static/media/down-arrow.8234c583226bdc7b6d8e.png",
     "static/media/humidity.png": "/static/media/humidity.3689f8c41adc73d4c561.png",
     "static/media/day-fog.png": "/static/media/day-fog.d33d8a8973268eaa60fb.png",
     "static/media/night-fog.png": "/static/media/night-fog.b10c391b2ab90ea6efad.png",
     "index.html": "/index.html",
-    "main.80e3455f.css.map": "/static/css/main.80e3455f.css.map",
-    "main.0a0e5027.js.map": "/static/js/main.0a0e5027.js.map"
+    "main.d289276e.css.map": "/static/css/main.d289276e.css.map",
+    "main.d0c089af.js.map": "/static/js/main.d0c089af.js.map"
   },
   "entrypoints": [
-    "static/css/main.80e3455f.css",
-    "static/js/main.0a0e5027.js"
+    "static/css/main.d289276e.css",
+    "static/js/main.d0c089af.js"
   ]
 }
