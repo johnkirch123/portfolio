@@ -5,6 +5,7 @@ import countdownImage from '../img/countdown-timer.png';
 import cryptoImage from '../img/crypto.png';
 import quizImage from '../img/quiz.png';
 import recipeImage from '../img/food.jfif';
+import todosImage from '../img/todos.PNG';
 
 const Home = () => {
   const images = [
@@ -12,7 +13,8 @@ const Home = () => {
     countdownImage,
     quizImage,
     recipeImage,
-    cryptoImage
+    cryptoImage,
+    todosImage
   ];
   return (
     <div className='home'>

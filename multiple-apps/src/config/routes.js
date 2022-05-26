@@ -18,11 +18,16 @@ export const apps = [
   {
     name: 'Recipe App',
     route: '/recipe',
-    image: '../img/countdown-timer.png'
+    image: '../img/food.jfif'
   },
   {
     name: 'Crypto App',
     route: '/crypto',
     image: '../img/crypto.png'
+  },
+  {
+    name: 'Todo App',
+    route: '/todo',
+    image: '../img/todos.PNG'
   }
 ];

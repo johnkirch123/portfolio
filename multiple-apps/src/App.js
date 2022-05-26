@@ -7,6 +7,7 @@ import CountdownTimerApp from './components/mainAppComponents/CountdownTimerApp'
 import QuizApp from './components/mainAppComponents/QuizApp';
 import RecipeApp from './components/mainAppComponents/RecipeApp';
 import CryptoApp from './components/mainAppComponents/CryptoApp';
+import TodoApp from './components/mainAppComponents/TodoApp';
 
 import './css/style.css';
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
         <Route path='/quiz' element={<QuizApp />} />
         <Route path='/recipe' element={<RecipeApp />} />
         <Route path='/crypto' element={<CryptoApp />} />
+        <Route path='/todo' element={<TodoApp />} />
       </Routes>
     </div>
   );

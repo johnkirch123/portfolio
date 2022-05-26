@@ -25,3 +25,7 @@ The [Recipe App](http://peaceful-temple-95021.herokuapp.com/recipe) uses the [Sp
 ## Crypto App
 
 The [Crypto App](http://peaceful-temple-95021.herokuapp.com/crypto) uses the [Coinranking](https://rapidapi.com/Coinranking/api/coinranking1) API from Rapid API. Rapid API is a great location to find all types of fun APIs to work with. This application displays the top 100 Crypto Coins by market cap and allows the user to filter them and and click on the coin to get the details from coinrankings page.
+
+## Todos App
+
+The [Todos App](http://peaceful-temple-95021.herokuapp.com/todo) uses the Context API for managing state and has editable fields. Add todos and the data is persisted via local storage
