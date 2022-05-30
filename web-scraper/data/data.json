@@ -1,0 +1,622 @@
+[
+  {
+    "ticker": "8BITHEROES-d3022d",
+    "floorPrice": 0.16,
+    "count": 6
+  },
+  {
+    "ticker": "AERMES-ac9886",
+    "floorPrice": 1.35,
+    "count": 13
+  },
+  {
+    "ticker": "ALIEN-a499ab",
+    "floorPrice": 0.01,
+    "count": 5
+  },
+  {
+    "ticker": "ALIEN-b4956a",
+    "floorPrice": 0.05,
+    "count": 1
+  },
+  {
+    "ticker": "APCTICKET-dd6db3",
+    "floorPrice": 0,
+    "count": 1
+  },
+  {
+    "ticker": "APCWWWINEB-2fd804",
+    "floorPrice": 0,
+    "count": 1
+  },
+  {
+    "ticker": "APCXAQUAW-c90c62",
+    "floorPrice": 0,
+    "count": 1
+  },
+  {
+    "ticker": "APCXSUBOG-1613fb",
+    "floorPrice": 0,
+    "count": 1
+  },
+  {
+    "ticker": "ARMOURY-34d6f1",
+    "floorPrice": 0.11,
+    "count": 4
+  },
+  {
+    "ticker": "ART-6f85d6",
+    "floorPrice": 0,
+    "count": 1
+  },
+  {
+    "ticker": "ARTCOIN-9e4d19",
+    "floorPrice": 1.1,
+    "count": 4
+  },
+  {
+    "ticker": "BABIES-ce5aa7",
+    "floorPrice": 0,
+    "count": 1
+  },
+  {
+    "ticker": "BADGES-8b41cd",
+    "floorPrice": 0,
+    "count": 1
+  },
+  {
+    "ticker": "BANANA-26afa2",
+    "floorPrice": 0.03,
+    "count": 1
+  },
+  {
+    "ticker": "BDGA-a05446",
+    "floorPrice": 1.05,
+    "count": 1
+  },
+  {
+    "ticker": "BEAR-97a7b6",
+    "floorPrice": 0.18,
+    "count": 1
+  },
+  {
+    "ticker": "BLZ-1d0442",
+    "floorPrice": 0.08,
+    "count": 5
+  },
+  {
+    "ticker": "BOB-6b96b4",
+    "floorPrice": 0.37,
+    "count": 2
+  },
+  {
+    "ticker": "BONPACKS-f0b549",
+    "floorPrice": 0.54,
+    "count": 1
+  },
+  {
+    "ticker": "BONSTREES-ffac5d",
+    "floorPrice": 0.3,
+    "count": 1
+  },
+  {
+    "ticker": "BRICKS-8b0bcb",
+    "floorPrice": 0.33,
+    "count": 4
+  },
+  {
+    "ticker": "CATSFAM-46c28f",
+    "floorPrice": 0.08,
+    "count": 1
+  },
+  {
+    "ticker": "CAVEMEN-1690ca",
+    "floorPrice": 0,
+    "count": 1
+  },
+  {
+    "ticker": "CAVEMEN-9ab535",
+    "floorPrice": 0.14,
+    "count": 27
+  },
+  {
+    "ticker": "CHALK-33daec",
+    "floorPrice": 0,
+    "count": 2
+  },
+  {
+    "ticker": "CHAOSCROCS-bd2e85",
+    "floorPrice": 0.15,
+    "count": 1
+  },
+  {
+    "ticker": "CHRISTMAS-a3afb6",
+    "floorPrice": 0,
+    "count": 1
+  },
+  {
+    "ticker": "CLC-92265b",
+    "floorPrice": 0,
+    "count": 1
+  },
+  {
+    "ticker": "COMBEYS-bc640d",
+    "floorPrice": 0.7,
+    "count": 1
+  },
+  {
+    "ticker": "COMNATURE-c9d9bb",
+    "floorPrice": 0,
+    "count": 1
+  },
+  {
+    "ticker": "CONTCCTEAM-9ea546",
+    "floorPrice": 0,
+    "count": 1
+  },
+  {
+    "ticker": "CORRUPT-f1b667",
+    "floorPrice": 0.81,
+    "count": 2
+  },
+  {
+    "ticker": "CRAZYBEAR-d3c2ea",
+    "floorPrice": 0,
+    "count": 1
+  },
+  {
+    "ticker": "CYBERDOGS-6b8e05",
+    "floorPrice": 0,
+    "count": 1
+  },
+  {
+    "ticker": "DEAD-79f8d1",
+    "floorPrice": 0.16,
+    "count": 1
+  },
+  {
+    "ticker": "DOPEBOX-752924",
+    "floorPrice": 0.59,
+    "count": 1
+  },
+  {
+    "ticker": "DRIFTERS-efd96c",
+    "floorPrice": 1.85,
+    "count": 19
+  },
+  {
+    "ticker": "EALIENPUNK-578305",
+    "floorPrice": 0.08,
+    "count": 11
+  },
+  {
+    "ticker": "ECB-7425e7",
+    "floorPrice": 0.09,
+    "count": 5
+  },
+  {
+    "ticker": "ECBG-f7dfc3",
+    "floorPrice": 0,
+    "count": 1
+  },
+  {
+    "ticker": "ECXSHROOMS-a8f20f",
+    "floorPrice": 0.02,
+    "count": 1
+  },
+  {
+    "ticker": "EDICKS-df4d55",
+    "floorPrice": 0,
+    "count": 4
+  },
+  {
+    "ticker": "EGG-4e8abe",
+    "floorPrice": 0.11,
+    "count": 1
+  },
+  {
+    "ticker": "EGGS-1b4aec",
+    "floorPrice": 0.12,
+    "count": 11
+  },
+  {
+    "ticker": "EGHOSTNFT1-87b6c9",
+    "floorPrice": 0,
+    "count": 1
+  },
+  {
+    "ticker": "EGIRL-443b95",
+    "floorPrice": 0,
+    "count": 2
+  },
+  {
+    "ticker": "EGLDHUNTER-9abc5c",
+    "floorPrice": 0.29,
+    "count": 3
+  },
+  {
+    "ticker": "EGLDOGGO-5fe6cd",
+    "floorPrice": 0.12,
+    "count": 8
+  },
+  {
+    "ticker": "ELF-065a2e",
+    "floorPrice": 0.15,
+    "count": 1
+  },
+  {
+    "ticker": "ELF-fc47c8",
+    "floorPrice": 0,
+    "count": 4
+  },
+  {
+    "ticker": "ELPS-c09dd3",
+    "floorPrice": 0,
+    "count": 1
+  },
+  {
+    "ticker": "ELVAFOREST-47810d",
+    "floorPrice": 0,
+    "count": 1
+  },
+  {
+    "ticker": "ENERGY-2668a8",
+    "floorPrice": 0.5,
+    "count": 2
+  },
+  {
+    "ticker": "EPANDAS-07f313",
+    "floorPrice": 0.15,
+    "count": 1
+  },
+  {
+    "ticker": "EPUNKS-46b186",
+    "floorPrice": 0.15,
+    "count": 17
+  },
+  {
+    "ticker": "EWIZZ-1e8ddb",
+    "floorPrice": 0.16,
+    "count": 22
+  },
+  {
+    "ticker": "EXP-aff411",
+    "floorPrice": 0.45,
+    "count": 2
+  },
+  {
+    "ticker": "FLUFF-288a44",
+    "floorPrice": 0.15,
+    "count": 12
+  },
+  {
+    "ticker": "FORGE16-830f70",
+    "floorPrice": 0,
+    "count": 1
+  },
+  {
+    "ticker": "FRIENDLY-414f67",
+    "floorPrice": 0.07,
+    "count": 1
+  },
+  {
+    "ticker": "FRIZZY-0153d1",
+    "floorPrice": 0.11,
+    "count": 2
+  },
+  {
+    "ticker": "GHOST-fcab59",
+    "floorPrice": 0.1,
+    "count": 1
+  },
+  {
+    "ticker": "GNOGONS-73222b",
+    "floorPrice": 4.6,
+    "count": 16
+  },
+  {
+    "ticker": "GUARDIAN-3d6635",
+    "floorPrice": 1.19,
+    "count": 3
+  },
+  {
+    "ticker": "HHP-76d251",
+    "floorPrice": 8.5,
+    "count": 1
+  },
+  {
+    "ticker": "HSWOLF-76e8bf",
+    "floorPrice": 0.78,
+    "count": 3
+  },
+  {
+    "ticker": "ISENGUARDS-c3544c",
+    "floorPrice": 0.35,
+    "count": 3
+  },
+  {
+    "ticker": "KAIROS-c0b9c0",
+    "floorPrice": 1.39,
+    "count": 1
+  },
+  {
+    "ticker": "KINGSGUARD-8e5d07",
+    "floorPrice": 0.05,
+    "count": 2
+  },
+  {
+    "ticker": "KITTIES-ef2cce",
+    "floorPrice": 0,
+    "count": 1
+  },
+  {
+    "ticker": "LIGHTNINGB-496265",
+    "floorPrice": 0.29,
+    "count": 14
+  },
+  {
+    "ticker": "LIONS-d7a901",
+    "floorPrice": 0.18,
+    "count": 3
+  },
+  {
+    "ticker": "LKFARM-9d1ea8",
+    "floorPrice": 0,
+    "count": 1
+  },
+  {
+    "ticker": "LKMEX-aab910",
+    "floorPrice": 0,
+    "count": 6
+  },
+  {
+    "ticker": "LUNICORN-44e85e",
+    "floorPrice": 0.45,
+    "count": 7
+  },
+  {
+    "ticker": "LUNIHEAD-485837",
+    "floorPrice": 0.18,
+    "count": 7
+  },
+  {
+    "ticker": "LYNXEE-212309",
+    "floorPrice": 0.02,
+    "count": 1
+  },
+  {
+    "ticker": "MANY-39af2c",
+    "floorPrice": 1.08,
+    "count": 6
+  },
+  {
+    "ticker": "MARSHM1-021222",
+    "floorPrice": 0.05,
+    "count": 2
+  },
+  {
+    "ticker": "MAW-894a92",
+    "floorPrice": 0.13,
+    "count": 3
+  },
+  {
+    "ticker": "MAYA-4d248d",
+    "floorPrice": 0,
+    "count": 1
+  },
+  {
+    "ticker": "MEMEADS-cb65b4",
+    "floorPrice": 0,
+    "count": 1
+  },
+  {
+    "ticker": "MKARMY-c784b8",
+    "floorPrice": 0.07,
+    "count": 1
+  },
+  {
+    "ticker": "MONKSUP-421abc",
+    "floorPrice": 1.1,
+    "count": 2
+  },
+  {
+    "ticker": "MOS-b9b4b2",
+    "floorPrice": 0,
+    "count": 4
+  },
+  {
+    "ticker": "MTNTHRSE-13bbe7",
+    "floorPrice": 0,
+    "count": 1
+  },
+  {
+    "ticker": "NBERGS-139351",
+    "floorPrice": 0.03,
+    "count": 2
+  },
+  {
+    "ticker": "NDO-950433",
+    "floorPrice": 0.35,
+    "count": 7
+  },
+  {
+    "ticker": "NDOA-012a14",
+    "floorPrice": 0.04,
+    "count": 12
+  },
+  {
+    "ticker": "OCTOPODS-bb7ca3",
+    "floorPrice": 0.21,
+    "count": 9
+  },
+  {
+    "ticker": "OGS-3f1408",
+    "floorPrice": 0.39,
+    "count": 3
+  },
+  {
+    "ticker": "ONODRIM-79ec23",
+    "floorPrice": 0.15,
+    "count": 8
+  },
+  {
+    "ticker": "ORCY-350bbd",
+    "floorPrice": 0,
+    "count": 5
+  },
+  {
+    "ticker": "OWL-5a4e6b",
+    "floorPrice": 0,
+    "count": 2
+  },
+  {
+    "ticker": "PANDA-860964",
+    "floorPrice": 0,
+    "count": 1
+  },
+  {
+    "ticker": "PARTY-705dcb",
+    "floorPrice": 0.03,
+    "count": 1
+  },
+  {
+    "ticker": "PHPX-4f58e9",
+    "floorPrice": 0,
+    "count": 1
+  },
+  {
+    "ticker": "PIGSELATED-7849e9",
+    "floorPrice": 0.04,
+    "count": 2
+  },
+  {
+    "ticker": "PIZZA-5e0a0e",
+    "floorPrice": 0,
+    "count": 1
+  },
+  {
+    "ticker": "PLATA-716c04",
+    "floorPrice": 4,
+    "count": 1
+  },
+  {
+    "ticker": "POL-1e9209",
+    "floorPrice": 0.1,
+    "count": 7
+  },
+  {
+    "ticker": "PRICK-f2c847",
+    "floorPrice": 0.8,
+    "count": 6
+  },
+  {
+    "ticker": "PROTECTORS-1bae37",
+    "floorPrice": 0.1,
+    "count": 1
+  },
+  {
+    "ticker": "QUACK-f01e02",
+    "floorPrice": 0.4,
+    "count": 23
+  },
+  {
+    "ticker": "RAPTOR-28e21c",
+    "floorPrice": 0.41,
+    "count": 1
+  },
+  {
+    "ticker": "ROKSLIME-f95aab",
+    "floorPrice": 0.41,
+    "count": 1
+  },
+  {
+    "ticker": "SAC-c60db0",
+    "floorPrice": 2.8,
+    "count": 1
+  },
+  {
+    "ticker": "SALTYDUCKS-217d12",
+    "floorPrice": 0.27,
+    "count": 4
+  },
+  {
+    "ticker": "SHIB-50039b",
+    "floorPrice": 0.13,
+    "count": 7
+  },
+  {
+    "ticker": "SHIBAWORLD-2c9e83",
+    "floorPrice": 0.02,
+    "count": 1
+  },
+  {
+    "ticker": "SPACEROBOT-bfbf9d",
+    "floorPrice": 0.12,
+    "count": 2
+  },
+  {
+    "ticker": "SRB-61daf7",
+    "floorPrice": 0.94,
+    "count": 29
+  },
+  {
+    "ticker": "SRC-27d8ff",
+    "floorPrice": 0.89,
+    "count": 2
+  },
+  {
+    "ticker": "SYMB-a060b0",
+    "floorPrice": 1.05,
+    "count": 3
+  },
+  {
+    "ticker": "TRIPPYT-52a2e3",
+    "floorPrice": 0.05,
+    "count": 1
+  },
+  {
+    "ticker": "UNDEADS-32068b",
+    "floorPrice": 0.02,
+    "count": 1
+  },
+  {
+    "ticker": "UNIQ-8d180b",
+    "floorPrice": 0.08,
+    "count": 8
+  },
+  {
+    "ticker": "VALGARDE-14ce86",
+    "floorPrice": 0.52,
+    "count": 3
+  },
+  {
+    "ticker": "VALIDATORS-e7e287",
+    "floorPrice": 4.95,
+    "count": 2
+  },
+  {
+    "ticker": "WARRIORZ-2f0986",
+    "floorPrice": 0.38,
+    "count": 1
+  },
+  {
+    "ticker": "WHALEYS-24a32a",
+    "floorPrice": 0.23,
+    "count": 1
+  },
+  {
+    "ticker": "WWWINE-5a5331",
+    "floorPrice": 0.58,
+    "count": 7
+  },
+  {
+    "ticker": "XPLANTCREW-3d80a9",
+    "floorPrice": 0,
+    "count": 1
+  },
+  {
+    "ticker": "YAVANNA-d95cb2",
+    "floorPrice": 0,
+    "count": 1
+  }
+]
