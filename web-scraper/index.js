@@ -9,7 +9,9 @@ const organize = require('./utils/organize');
 const scrapePrice = require('./utils/scrapers');
 
 const ADDRESS =
-  'erd12rajusd5amuea8pepulgdzxrzva2z0gtrswtmrn3cjagqn63hewsytxcy2';
+  'erd1hzw5juzprkvjh6nk40408rplmh3p2ws04dsnh64kg3w6aqajvq3qv5etdt';
+// const ADDRESS =
+//   'erd12rajusd5amuea8pepulgdzxrzva2z0gtrswtmrn3cjagqn63hewsytxcy2';
 // const ADDRESS =
 //   'erd1maczpujskj9dr7f2swejul9w08q0sqdccaharahk0pe693r59ygs5dfmp6';
 
