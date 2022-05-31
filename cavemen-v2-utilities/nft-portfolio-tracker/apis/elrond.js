@@ -2,7 +2,11 @@ const axios = require('axios');
 const { apiBasePath, apiModifier } = require('../config/config');
 
 const formatCollectionData = (collectionData) => {
-  return collectionData.map((collectionItem) => collectionItem.collection);
+  const data = collectionData.map((collectionItem) => {
+    if (collectionItem.decimals) return;
+    return collectionItem.collection;
+  });
+  return data.filter((ele) => ele !== undefined);
 };
 
 const nftTotalCount = async (address) => {
