@@ -20,46 +20,41 @@ const ADDRESS =
 const getNFTValue = async () => {
   const finalObject = [];
   // Returns an array of all the collections held by the address
-  // const collections = await collectionsQuery(ADDRESS);
+  const collections = await collectionsQuery(ADDRESS);
 
   // An object with the counts from each collection
-  // const collectionCounts = organize.createObject(collections);
+  const collectionCounts = organize.createObject(collections);
   const start = performance.now();
-  // for (const [key, value] of Object.entries(collectionCounts)) {
-  let collections = await scrapePrice(
-    'https://deadrare.io/collections',
-    priceXPaths.deadRare
-  );
-  // let floorPrice = await scrapePrice(
-  //   `${baseURL.deadrareBaseUrl}${key}`,
-  //   priceXPaths.deadRare
-  // );
-  // if (floorPrice === 0) {
-  //   floorPrice = await scrapePrice(
-  //     `${baseURL.trustBaseUrl}${key}`,
-  //     priceXPaths.trust
-  //   );
-  // }
-  // if (floorPrice === 0) {
-  //   floorPrice = await scrapePrice(
-  //     `${baseURL.frameItBaseUrl}${key}/sale`,
-  //     priceXPaths.frameIt
-  //   );
-  // }
-  // finalObject.push({
-  //   ticker: key,
-  //   floorPrice,
-  //   count: value
-  // });
-  console.log('collections', collections);
-  // fs.writeFileSync(
-  //   `${dataDir}/data.json`,
-  //   JSON.stringify(finalObject, null, 2)
-  //   );
-  // };
-
+  for (const [key, value] of Object.entries(collectionCounts)) {
+    let floorPrice = await scrapePrice(
+      `${baseURL.deadrareBaseUrl}${key}`,
+      priceXPaths.deadRare
+    );
+    // if (floorPrice === 0) {
+    //   floorPrice = await scrapePrice(
+    //     `${baseURL.trustBaseUrl}${key}`,
+    //     priceXPaths.trust
+    //   );
+    // }
+    // if (floorPrice === 0) {
+    //   floorPrice = await scrapePrice(
+    //     `${baseURL.frameItBaseUrl}${key}/sale`,
+    //     priceXPaths.frameIt
+    //   );
+    // }
+    finalObject.push({
+      ticker: key,
+      floorPrice,
+      count: value
+    });
+    console.log(finalObject);
+  }
   const duration = (performance.now() - start) / 1000;
   console.log(duration);
+  fs.writeFileSync(
+    `${dataDir}/data.json`,
+    JSON.stringify(finalObject, null, 2)
+  );
 };
 
 getNFTValue();
