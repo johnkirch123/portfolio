@@ -1,28 +1,42 @@
 import React, { useState, useEffect } from 'react';
 import { useQuery } from '@apollo/client';
 import { LOAD_COLLECTIONS } from '../GraphQL/Queries';
+import CollectionItem from './CollectionItem';
+
+import './collection.css';
 
 const Collections = () => {
   const { error, loading, data } = useQuery(LOAD_COLLECTIONS);
   const [collections, setCollections] = useState([]);
 
   useEffect(() => {
-    if (data) setCollections(data.listListings.results);
+    if (data) {
+      let nullRankCollections = [];
+      let sortedCollections = [...data.listListings.results]
+        .sort((a, b) => {
+          if (a.rank === null) {
+            nullRankCollections.push(a);
+            return;
+          }
+          return a.rank - b.rank;
+        })
+        .filter((collection) => collection.rank !== null);
+      setCollections(sortedCollections);
+      console.log(sortedCollections);
+    }
   }, [data]);
 
-  console.log(collections);
-
   return (
-    <div>
+    <div className='collection__container'>
       {collections?.map((collection) => (
-        <div className='collection__item' key={collection.rank}>
-          {collection.name}
-          <img
-            src={collection.imageUrl}
-            alt={collection.name}
-            style={{ width: 200, height: 200 }}
-          />
-        </div>
+        <a
+          key={collection.rank}
+          href={`https://deadrare.io/collection/${collection.collectionTicker}`}
+          className='collection__link--deadrare'
+          target='_blank'
+        >
+          <CollectionItem collection={collection} />
+        </a>
       ))}
     </div>
   );
