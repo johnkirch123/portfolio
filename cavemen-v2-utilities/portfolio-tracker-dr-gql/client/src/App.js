@@ -1,12 +1,10 @@
-import './App.css';
-// import { request, gql, GraphQLClient } from 'graphql-request';
-import {
-  ApolloClient,
-  InMemoryCache,
-  ApolloProvider,
-  useQuery
-} from '@apollo/client';
-import Collections from './components/Collections';
+import './app.css';
+import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
+import TickerTape from './components/TickerComponent/TickerTape';
+import TwitterFeed from './components/TwitterComponent/TwitterFeed';
+import MainArea from './components/MainComponent/MainArea';
+import Collections from './components/CollectionComponent/Collections';
+import Footer from './components/FooterComponent/Footer';
 
 function App() {
   const client = new ApolloClient({
@@ -16,9 +14,12 @@ function App() {
 
   return (
     <ApolloProvider client={client}>
-      <h1>List of Collections</h1>
-      <div className='App'>
+      <div className='app'>
+        <TickerTape />
+        <TwitterFeed />
+        <MainArea />
         <Collections />
+        <Footer />
       </div>
     </ApolloProvider>
   );

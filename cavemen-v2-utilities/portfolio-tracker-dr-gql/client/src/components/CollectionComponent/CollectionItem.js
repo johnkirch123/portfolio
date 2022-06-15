@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../images/logo192.png';
+import logo from '../../images/logo192.png';
 import { FaTwitter, FaDiscord } from 'react-icons/fa';
 import { MdWeb } from 'react-icons/md';
 
@@ -17,7 +17,7 @@ const CollectionItem = ({ collection }) => {
   };
 
   return (
-    <div className='collection__item' key={collection.rank}>
+    <div className='collection__item' key={collection.collectionTicker}>
       <div className='collection__image-rank'>
         <p className='collection__rank'>#{collection.rank}</p>
         <div className='collection__image--box'></div>
@@ -191,6 +191,7 @@ const CollectionItem = ({ collection }) => {
           className='collection__link'
           href={collection.twitterLink}
           target='_blank'
+          rel='noreferrer'
         >
           <FaTwitter className='collection__icon' />
         </a>
@@ -198,6 +199,7 @@ const CollectionItem = ({ collection }) => {
           className='collection__link'
           href={collection.discordLink}
           target='_blank'
+          rel='noreferrer'
         >
           <FaDiscord className='collection__icon' />
         </a>
@@ -205,6 +207,7 @@ const CollectionItem = ({ collection }) => {
           className='collection__link'
           href={collection.websiteLink}
           target='_blank'
+          rel='noreferrer'
         >
           <MdWeb className='collection__icon' />
         </a>

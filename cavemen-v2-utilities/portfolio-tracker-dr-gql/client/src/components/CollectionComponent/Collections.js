@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useQuery } from '@apollo/client';
-import { LOAD_COLLECTIONS } from '../GraphQL/Queries';
+import { LOAD_COLLECTIONS } from '../../GraphQL/Queries';
 import CollectionItem from './CollectionItem';
 
 import './collection.css';
@@ -16,15 +16,17 @@ const Collections = () => {
         .sort((a, b) => {
           if (a.rank === null) {
             nullRankCollections.push(a);
-            return;
+            return null;
           }
           return a.rank - b.rank;
         })
         .filter((collection) => collection.rank !== null);
       setCollections(sortedCollections);
-      console.log(sortedCollections);
     }
   }, [data]);
+
+  if (error) console.log(error);
+  if (loading) console.log('Loading...');
 
   return (
     <div className='collection__container'>
@@ -33,6 +35,7 @@ const Collections = () => {
           key={collection.rank}
           href={`https://deadrare.io/collection/${collection.collectionTicker}`}
           className='collection__link--deadrare'
+          rel='noreferrer'
           target='_blank'
         >
           <CollectionItem collection={collection} />
