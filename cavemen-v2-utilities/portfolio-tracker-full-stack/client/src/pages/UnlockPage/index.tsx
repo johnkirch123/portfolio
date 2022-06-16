@@ -1,6 +1,5 @@
 import React from 'react';
 import { DappUI, useGetLoginInfo } from '@elrondnetwork/dapp-core';
-import axios from 'axios';
 import { routeNames } from 'routes';
 import background from '../../img/crypto-cavemen-banner-lines.png';
 

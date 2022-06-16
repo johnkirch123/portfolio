@@ -3,14 +3,21 @@ import { useQuery } from '@apollo/client';
 import { LOAD_COLLECTIONS } from '../../GraphQL/Queries';
 import CollectionItem from './CollectionItem';
 
-const Collections = (): JSX.Element => {
+import './collection.css';
+
+const Collections = () => {
   const { error, loading, data } = useQuery(LOAD_COLLECTIONS);
-  const [collections, setCollections] = useState<any>([]);
+  const [collections, setCollections] = useState([]);
 
   useEffect(() => {
     if (data) {
-      const sortedCollections: any[] = [...data.listListings.results]
-        .sort((a: any, b: any): number => {
+      let nullRankCollections = [];
+      let sortedCollections = [...data.listListings.results]
+        .sort((a, b) => {
+          if (a.rank === null) {
+            nullRankCollections.push(a);
+            return null;
+          }
           return a.rank - b.rank;
         })
         .filter((collection) => collection.rank !== null);
@@ -18,15 +25,18 @@ const Collections = (): JSX.Element => {
     }
   }, [data]);
 
+  if (error) console.log(error);
+  if (loading) console.log('Loading...');
+
   return (
     <div className='collection__container'>
-      {collections?.map((collection: any) => (
+      {collections?.map((collection) => (
         <a
-          key={collection.collectionTicker}
+          key={collection.rank}
           href={`https://deadrare.io/collection/${collection.collectionTicker}`}
           className='collection__link--deadrare'
-          target='_blank'
           rel='noreferrer'
+          target='_blank'
         >
           <CollectionItem collection={collection} />
         </a>

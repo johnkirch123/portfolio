@@ -1,57 +1,9 @@
 import React from 'react';
-import logo from '../../assets/img/elrond-logo.png';
+import logo from '../../assets/img/elrond-symbol.svg';
 import { FaTwitter, FaDiscord } from 'react-icons/fa';
 import { MdWeb } from 'react-icons/md';
 
-interface IProps {
-  collection: {
-    imageUrl: string;
-    name: string;
-    rank: number;
-    collectionTicker: string;
-    description: string;
-    floorPrice: number;
-    dailyVolume: number;
-    dailyChange: number;
-    stats: {
-      allTimeStats: {
-        averagePrice: number;
-        totalPrice: number;
-        highestPrice: number;
-        totalSales: number;
-      };
-      dayStats: {
-        averagePrice: number;
-        totalPrice: number;
-        highestPrice: number;
-        totalSales: number;
-      };
-      previousDayStats: {
-        averagePrice: number;
-        totalPrice: number;
-        highestPrice: number;
-        totalSales: number;
-      };
-      weekStats: {
-        averagePrice: number;
-        totalPrice: number;
-        highestPrice: number;
-        totalSales: number;
-      };
-      previousWeekStats: {
-        averagePrice: number;
-        totalPrice: number;
-        highestPrice: number;
-        totalSales: number;
-      };
-    };
-    twitterLink: string;
-    discordLink: string;
-    websiteLink: string;
-  };
-}
-
-const CollectionItem: React.FC<IProps> = ({ collection }) => {
+const CollectionItem = ({ collection }) => {
   const {
     allTimeStats,
     dayStats,
@@ -60,12 +12,12 @@ const CollectionItem: React.FC<IProps> = ({ collection }) => {
     previousWeekStats
   } = collection.stats;
 
-  const truncate = (str: string, n: number): string => {
+  const truncate = (str, n) => {
     return str.length > n ? str.substr(0, n - 1) + '...' : str;
   };
 
   return (
-    <div className='collection__item' key={collection.rank}>
+    <div className='collection__item' key={collection.collectionTicker}>
       <div className='collection__image-rank'>
         <p className='collection__rank'>#{collection.rank}</p>
         <div className='collection__image--box'></div>
@@ -108,7 +60,7 @@ const CollectionItem: React.FC<IProps> = ({ collection }) => {
                   collection.dailyChange > 1 ? 'green' : 'red'
                 }`}
               >
-                {parseFloat(collection.dailyChange.toFixed(2)) > 1
+                {collection.dailyChange.toFixed(2) > 1
                   ? ((collection.dailyChange - 1) * 100).toFixed(2)
                   : ((1 - collection.dailyChange) * 100).toFixed(2)}
                 &nbsp; %
@@ -137,19 +89,19 @@ const CollectionItem: React.FC<IProps> = ({ collection }) => {
             All
           </p>
           <div className='grid__items'>
-            <p>{allTimeStats?.averagePrice.toFixed(1) || 0}</p>&nbsp;
+            <p>{allTimeStats?.averagePrice.toFixed(1)}</p>&nbsp;
             <img src={logo} alt='elrond logo' className='elrond__logo' />
           </div>
           <div className='grid__items'>
-            <p>{allTimeStats?.totalPrice.toFixed(1) || 0}</p>&nbsp;
+            <p>{allTimeStats?.totalPrice.toFixed(1)}</p>&nbsp;
             <img src={logo} alt='elrond logo' className='elrond__logo' />
           </div>
           <div className='grid__items'>
-            <p>{allTimeStats?.highestPrice.toFixed(1) || 0}</p>&nbsp;
+            <p>{allTimeStats?.highestPrice.toFixed(1)}</p>&nbsp;
             <img src={logo} alt='elrond logo' className='elrond__logo' />
           </div>
           <div className='grid__items'>
-            <p>{allTimeStats?.totalSales.toFixed(1) || 0}</p>&nbsp;
+            <p>{allTimeStats?.totalSales.toFixed(1)}</p>&nbsp;
             <img src={logo} alt='elrond logo' className='elrond__logo' />
           </div>
 
@@ -157,19 +109,19 @@ const CollectionItem: React.FC<IProps> = ({ collection }) => {
             Day
           </p>
           <div className='grid__items'>
-            <p>{dayStats?.averagePrice.toFixed(1) || 0}</p>&nbsp;
+            <p>{dayStats?.averagePrice.toFixed(1)}</p>&nbsp;
             <img src={logo} alt='elrond logo' className='elrond__logo' />
           </div>
           <div className='grid__items'>
-            <p>{dayStats?.totalPrice.toFixed(1) || 0}</p>&nbsp;
+            <p>{dayStats?.totalPrice.toFixed(1)}</p>&nbsp;
             <img src={logo} alt='elrond logo' className='elrond__logo' />
           </div>
           <div className='grid__items'>
-            <p>{dayStats?.highestPrice.toFixed(1) || 0}</p>&nbsp;
+            <p>{dayStats?.highestPrice.toFixed(1)}</p>&nbsp;
             <img src={logo} alt='elrond logo' className='elrond__logo' />
           </div>
           <div className='grid__items'>
-            <p>{dayStats?.totalSales.toFixed(1) || 0}</p>&nbsp;
+            <p>{dayStats?.totalSales.toFixed(1)}</p>&nbsp;
             <img src={logo} alt='elrond logo' className='elrond__logo' />
           </div>
 
@@ -177,19 +129,19 @@ const CollectionItem: React.FC<IProps> = ({ collection }) => {
             Prev D
           </p>
           <div className='grid__items'>
-            <p>{previousDayStats?.averagePrice.toFixed(1) || 0}</p>&nbsp;
+            <p>{previousDayStats?.averagePrice.toFixed(1)}</p>&nbsp;
             <img src={logo} alt='elrond logo' className='elrond__logo' />
           </div>
           <div className='grid__items'>
-            <p>{previousDayStats?.totalPrice.toFixed(1) || 0}</p>&nbsp;
+            <p>{previousDayStats?.totalPrice.toFixed(1)}</p>&nbsp;
             <img src={logo} alt='elrond logo' className='elrond__logo' />
           </div>
           <div className='grid__items'>
-            <p>{previousDayStats?.highestPrice.toFixed(1) || 0}</p>&nbsp;
+            <p>{previousDayStats?.highestPrice.toFixed(1)}</p>&nbsp;
             <img src={logo} alt='elrond logo' className='elrond__logo' />
           </div>
           <div className='grid__items'>
-            <p>{previousDayStats?.totalSales.toFixed(1) || 0}</p>&nbsp;
+            <p>{previousDayStats?.totalSales.toFixed(1)}</p>&nbsp;
             <img src={logo} alt='elrond logo' className='elrond__logo' />
           </div>
 
@@ -197,19 +149,19 @@ const CollectionItem: React.FC<IProps> = ({ collection }) => {
             Week
           </p>
           <div className='grid__items'>
-            <p>{weekStats?.averagePrice.toFixed(1) || 0}</p>&nbsp;
+            <p>{weekStats?.averagePrice.toFixed(1)}</p>&nbsp;
             <img src={logo} alt='elrond logo' className='elrond__logo' />
           </div>
           <div className='grid__items'>
-            <p>{weekStats?.totalPrice.toFixed(1) || 0}</p>&nbsp;
+            <p>{weekStats?.totalPrice.toFixed(1)}</p>&nbsp;
             <img src={logo} alt='elrond logo' className='elrond__logo' />
           </div>
           <div className='grid__items'>
-            <p>{weekStats?.highestPrice.toFixed(1) || 0}</p>&nbsp;
+            <p>{weekStats?.highestPrice.toFixed(1)}</p>&nbsp;
             <img src={logo} alt='elrond logo' className='elrond__logo' />
           </div>
           <div className='grid__items'>
-            <p>{weekStats?.totalSales.toFixed(1) || 0}</p>&nbsp;
+            <p>{weekStats?.totalSales.toFixed(1)}</p>&nbsp;
             <img src={logo} alt='elrond logo' className='elrond__logo' />
           </div>
 
@@ -217,19 +169,19 @@ const CollectionItem: React.FC<IProps> = ({ collection }) => {
             Prev W
           </p>
           <div className='grid__items'>
-            <p>{previousWeekStats?.averagePrice.toFixed(1) || 0}</p>&nbsp;
+            <p>{previousWeekStats?.averagePrice.toFixed(1)}</p>&nbsp;
             <img src={logo} alt='elrond logo' className='elrond__logo' />
           </div>
           <div className='grid__items'>
-            <p>{previousWeekStats?.totalPrice.toFixed(1) || 0}</p>&nbsp;
+            <p>{previousWeekStats?.totalPrice.toFixed(1)}</p>&nbsp;
             <img src={logo} alt='elrond logo' className='elrond__logo' />
           </div>
           <div className='grid__items'>
-            <p>{previousWeekStats?.highestPrice.toFixed(1) || 0}</p>&nbsp;
+            <p>{previousWeekStats?.highestPrice.toFixed(1)}</p>&nbsp;
             <img src={logo} alt='elrond logo' className='elrond__logo' />
           </div>
           <div className='grid__items'>
-            <p>{previousWeekStats?.totalSales.toFixed(1) || 0}</p>&nbsp;
+            <p>{previousWeekStats?.totalSales.toFixed(1)}</p>&nbsp;
             <img src={logo} alt='elrond logo' className='elrond__logo' />
           </div>
         </div>

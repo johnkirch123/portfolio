@@ -3,7 +3,6 @@
 .collection__container {
   grid-row: 2 / 3;
   grid-column: 3 / -1;
-  height: 100%;
   display: flex;
   flex-direction: column;
   background-color: #222;
@@ -30,12 +29,11 @@
   box-shadow: inset 3px 3px 10px 0 #000000;
   top: 0;
   left: 0;
-  object-fit: cover;
 }
 
 .collection__image {
-  height: 120px;
-  width: auto;
+  height: 100px;
+  width: 100px;
 }
 
 .collection__item {
