@@ -1,0 +1,23 @@
+{
+  "name": "portfolio-tracker",
+  "version": "1.0.0",
+  "description": "Elrond NFT portfolio tracker",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js"
+  },
+  "author": "John Kirch",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-express": "^3.9.0",
+    "axios": "^0.27.2",
+    "config": "^3.3.7",
+    "express": "^4.18.1",
+    "graphql": "^16.5.0",
+    "mongoose": "^6.3.8"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}

@@ -5,6 +5,7 @@ import TwitterFeed from './components/TwitterComponent/TwitterFeed';
 import MainArea from './components/MainComponent/MainArea';
 import Collections from './components/CollectionComponent/Collections';
 import Footer from './components/FooterComponent/Footer';
+import Header from './components/HeaderComponent/Header';
 
 function App() {
   const client = new ApolloClient({
@@ -14,6 +15,7 @@ function App() {
 
   return (
     <ApolloProvider client={client}>
+      <Header />
       <div className='app'>
         <TickerTape />
         <TwitterFeed />
