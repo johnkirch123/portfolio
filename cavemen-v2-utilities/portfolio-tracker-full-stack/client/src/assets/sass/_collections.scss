@@ -30,12 +30,12 @@
   box-shadow: inset 3px 3px 10px 0 #000000;
   top: 0;
   left: 0;
-  object-fit: cover;
 }
 
 .collection__image {
   height: 120px;
   width: auto;
+  object-fit: cover;
 }
 
 .collection__item {

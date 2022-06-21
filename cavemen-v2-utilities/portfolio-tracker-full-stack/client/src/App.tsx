@@ -7,7 +7,6 @@ import PageNotFound from 'pages/PageNotFound';
 import { routeNames } from 'routes';
 import routes from 'routes';
 import './assets/css/style.css';
-// import '@elrondnetwork/dapp-core/build/index.css';
 
 const environment = 'devnet';
 

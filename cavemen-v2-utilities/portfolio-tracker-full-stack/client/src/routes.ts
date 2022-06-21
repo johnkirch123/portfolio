@@ -1,21 +1,15 @@
-import About from 'pages/About/About';
-import Collections from 'pages/Collections';
-import Roadmap from 'pages/Roadmap';
 import withPageTitle from './components/PageTitle';
-import Cavemen from './pages/Cavemen';
+import About from './pages/About/About';
 import Dashboard from './pages/Dashboard';
 import Home from './pages/Home';
-import LegacySFT from './pages/LegacySFT';
+import Roadmap from './pages/Roadmap';
 import Transaction from './pages/Transaction';
 
 export const routeNames = {
   home: '/',
   dashboard: '/dashboard',
   transaction: '/transaction',
-  cavemen: '/cavemen',
-  legacySFT: '/legacySFT',
   roadmap: '/roadmap',
-  collections: '/collections',
   about: '/about',
   unlock: '/unlock',
   ledger: '/ledger',
@@ -23,16 +17,6 @@ export const routeNames = {
 };
 
 const routes: Array<any> = [
-  {
-    path: routeNames.cavemen,
-    title: 'Cavemen',
-    component: Cavemen
-  },
-  {
-    path: routeNames.legacySFT,
-    title: 'LegacySFT',
-    component: LegacySFT
-  },
   {
     path: routeNames.home,
     title: 'Home',
@@ -53,11 +37,6 @@ const routes: Array<any> = [
     path: routeNames.about,
     title: 'About',
     component: About
-  },
-  {
-    path: routeNames.collections,
-    title: 'Collections',
-    component: Collections
   },
   {
     path: routeNames.transaction,

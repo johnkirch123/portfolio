@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import { routeNames } from 'routes';
 import logo from '../../../assets/img/logo.png';
 import Navlist from './Navlist';
-// import { ReactComponent as ElrondLogo } from './../../../assets/img/elrond.svg';
 
 const Navbar = () => {
   const { address } = useGetAccountInfo();

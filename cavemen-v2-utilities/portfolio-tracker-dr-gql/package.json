@@ -13,9 +13,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@reduxjs/toolkit": "^1.8.2",
     "apollo-server": "^3.8.2",
     "axios": "^0.27.2",
     "graphql": "^16.5.0",
-    "nodemon": "^2.0.16"
+    "nodemon": "^2.0.16",
+    "react-redux": "^8.0.2",
+    "redux": "^4.2.0",
+    "redux-thunk": "^2.4.1"
   }
 }

@@ -1,7 +1,7 @@
 import React from 'react';
-import logo from '../../assets/img/elrond-symbol.svg';
 import { FaTwitter, FaDiscord } from 'react-icons/fa';
 import { MdWeb } from 'react-icons/md';
+import logo from '../../assets/img/elrond-symbol.svg';
 
 const CollectionItem = ({ collection }) => {
   const {
