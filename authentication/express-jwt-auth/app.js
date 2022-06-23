@@ -27,7 +27,7 @@ app.use(passport.initialize());
 
 // Instead of using body-parser middleware, use the new Express implementation of the same thing
 app.use(express.json());
-app.use(express.urlencoded({extended: true}));
+app.use(express.urlencoded({ extended: true }));
 
 // Allows our Angular application to make HTTP requests to Express application
 app.use(cors());
@@ -43,7 +43,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Imports all of the routes from ./routes/index.js
 app.use(require('./routes'));
-
 
 /**
  * -------------- SERVER ----------------
